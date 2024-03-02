@@ -5,6 +5,8 @@ body{
     margin:0;
     padding:0;
     background-color: #F4F3F2;
+    font-family:'Poppins',sans-serif;
+    color:rgb(32, 32, 32);
 }
 
 header{
@@ -23,5 +25,58 @@ header{
 
 .navbar p{
     margin:25px 0 0 50px;
+}
+
+input{
+    font-family:'Poppins',sans-serif;
+    border:1px solid #c9c9c9;
+    border-radius: 5px;
+    padding:5px;
+}
+
+
+#age{
+    width:45px;
+}
+
+#address{
+    width:100%;
+}
+
+#fathername,#mothername,#guardianname{
+    width:25%;
+}
+input::placeholder{
+    font-family:'Poppins',sans-serif;
+}
+
+
+div.details-history{
+    margin-top:5%;
+}
+
+form h2{
+    text-align: center;
+}
+
+form{
+    margin-left:200px;
+    margin-right:200px;
+}
+
+div.medical-record{
+    margin:50px auto;
+    width:80%;;
+    align-items: center;
+    display:flex;
+    justify-content: center;
+    flex-direction: row;
+    padding:20px;
+    border-radius: 10px;
+    background-color: rgba(158, 158, 158, 0.096);
+}
+
+ p, label,input{
+    margin:5px;
 }
 
