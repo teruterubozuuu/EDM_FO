@@ -6,7 +6,7 @@ body{
     padding:0;
     background-color: #F4F3F2;
     font-family:'Poppins',sans-serif;
-    color:rgb(48, 48, 48);
+    color:rgb(71, 71, 71);
 }
 
 header{
@@ -29,9 +29,10 @@ header{
 
 
 form{
-    margin-left:200px;
-    margin-right:200px;
+    margin-left:100px;
+    margin-right:100px;
     width:100%;
+    padding:1px;
 }
 
 form h2{
@@ -46,7 +47,7 @@ div.dental-record{
     justify-content: center;
     flex-direction: row;
     padding:20px;
-    border-radius: 10px;
+    border-radius: 5px;
     background-color: rgba(196, 196, 196, 0.096);
 }
 
@@ -55,12 +56,11 @@ table{
     margin:auto;
     width:100%;
     text-align: center;
-    border:1px solid black;
     background-color: white;
 }
 
 td,th{
-    border:1px solid black;
+    border:1px solid rgb(102, 102, 102);
 }
 
 td input{
@@ -112,9 +112,24 @@ table,td,th{
 
 td label{
     font-size:14px;
+
 }
 
 input[type=date]{
     font-size:10.5px;
+}
+
+input:focus{
+    outline:none;
+}
+td{
+    width:20px;
+}
+td input{
+    width:70px;
+}
+
+.assessment .label{
+    width:100px;
 }
 
