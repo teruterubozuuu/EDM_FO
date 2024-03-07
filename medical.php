@@ -146,15 +146,15 @@
                 <hr>
 
                 <p><b>COVID 19 VACCINE:</b> Please check the appropriate boxes.</p>
-                <input type="checkbox" id="1stDose" class="1stDose" name="COVID19VACCINE1" value="1st Dose" onchange="toggleRequired()" >
+                <input type="checkbox" id="1stDose" class="1stDose" name="COVID19VACCINE1" value="1stDose" required>
                 <label for="1stDose">1st Dose</label><br>
-                <input type="checkbox" class="2ndDose" name="COVID19VACCINE2" value="2nd Dose" onchange="toggleRequired()" >
+                <input type="checkbox" class="2ndDose" name="COVID19VACCINE2" value="2ndDose" required>
                 <label for="2ndDose">2nd Dose</label><br>
-                <input type="checkbox" class="Booster1" name="COVID19VACCINE3" value="Booster 1" onchange="toggleRequired()"  >
+                <input type="checkbox" class="Booster1" name="COVID19VACCINE3" value="Booster1" required >
                 <label for="Booster1">Booster 1</label><br>
-                <input type="checkbox" class="Booster2" name="COVID19VACCINE4" value="Booster 2" onchange="toggleRequired()" >
+                <input type="checkbox" class="Booster2" name="COVID19VACCINE4" value="Booster2" required>
                 <label for="Booster2">Booster 2</label><br>
-                <input type="checkbox" class="notApplicable" name="COVID19VACCINE5" value="Not Applicable" onchange="toggleRequired()" >
+                <input type="checkbox" class="notApplicable" name="COVID19VACCINE5" value="NotApplicable" required>
                 <label for="notApplicable">Not Applicable</label><br>
             </div> 
             <hr>
