@@ -2,7 +2,7 @@
     $username = $_POST['username'];
     $password = $_POST['password'];
 
-    $con = new mysqli("localhost", "root", "", "emcfo");
+    $con = new mysqli("localhost", "root", "", "emc_fo");
 
     if($con->connect_error) {
         die("Failed to connect:".$con->connect_error);
