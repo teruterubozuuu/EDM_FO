@@ -50,8 +50,8 @@ require 'dbcon.php';
                                         <td><?= $student['student_lastname']; ?></td>
                                         <td><?= $student['year_level']; ?></td>
                                         <td>
-                                            <a href="" class="btn btn-info btn-sm">Edit</a>
-                                            <a href="" class="btn btn-success btn-sm">Edit</a>
+                                            <a href="" class="btn btn-info btn-sm">View</a>
+                                            <a href="student-edit.php?id=<?= $student['student_number']; ?>" class="btn btn-success btn-sm">Edit</a>
                                             <a href="" class="btn btn-danger btn-sm">Delete</a>
                                         </td>
                                     </tr>
