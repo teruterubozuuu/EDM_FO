@@ -52,7 +52,9 @@ require 'dbcon.php';
                                         <td>
                                             <a href="student-view.php?id=<?= $student['student_number']; ?>" class="btn btn-info btn-sm">View</a>
                                             <a href="student-edit.php?id=<?= $student['student_number']; ?>" class="btn btn-success btn-sm">Edit</a>
-                                            <a href="" class="btn btn-danger btn-sm">Delete</a>
+                                            <form action="records.php" method="POST" class="d-inline">
+                                                <button type="submit" name="delete" value="<?=$student['student_number'];?>" class="btn btn-danger btn-sm">Delete</button>
+                                            </form>
                                         </td>
                                     </tr>
 

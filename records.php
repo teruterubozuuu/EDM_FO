@@ -1,8 +1,14 @@
 <?php
+
+    // Create connection
+    
+
     $servername = "localhost";
     $username = "root";
     $database = "emc_fo";
     $password = "Teru_bozu5162";
+
+    $conn = new mysqli($servername, $username, "", $database);
 
     if (isset($_POST['update'])) 
     {
@@ -45,9 +51,20 @@
     $checkbox4 = isset($_POST['COVID19VACCINE4']) ? $_POST['COVID19VACCINE4'] : '';
     $checkbox5 = isset($_POST['COVID19VACCINE5']) ? $_POST['COVID19VACCINE5'] : '';
 
-    
+    }
 
+    if(isset($_POST['delete']))
+    {
+      $student_name = mysqli_real_escape_string( $conn, $_POST['delete']);
 
+      $query = "DELETE FROM student_details WHERE student_firstname = '$student_name' ";
+      $query_run = mysqli_query( $conn, $query );
+
+      if($query_run){
+        header("Location: studentlist.html");
+      } else {
+        header("Location: studentlist.html");
+      }
     }
 
     //Student Details
@@ -95,8 +112,7 @@
   $combinedValues = $checkbox1 . ',' . $checkbox2 . ',' . $checkbox3 . ',' . $checkbox4 . ',' . $checkbox5;
     
     
-    // Create connection
-    $conn = new mysqli($servername, $username, "", $database);
+
     
     // Check connection
     if ($conn->connect_error) {
