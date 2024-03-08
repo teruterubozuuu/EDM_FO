@@ -1,3 +1,4 @@
+
 // Validation for "Should your child need to go home during the day and we need to contact you, is there someone at your house who would care for the child?"
 var noAvailableGuardian = document.getElementById("noAvailableGuardian");
 var yesAvailableGuardian = document.getElementById("yesAvailableGuardian");

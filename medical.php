@@ -21,12 +21,12 @@
             <hr>
             <div class="patient-details">
                 <label for="YearLevel">Year level</label>
-                <input type="number" id="yearlevel" name="yearlevel">
+                <input type="text" id="yearlevel" pattern="[0-9]+" name="yearlevel">
                 <label for="Section">Section</label>
                 <input type="text" id="section" name="section" >
 
                 <label for="studentNumber">Student Number</label>
-                <input type="number" id="studentNumber" name="studentNumber">
+                <input type="text" id="studentNumber" pattern="[0-9]+" name="studentNumber">
 
                 <br><label for="Name">Name</label>
                 <input type="text"  id="lastname" name="lastname"  required placeholder="Last name">
@@ -34,7 +34,7 @@
                 <input type="text" id="middlename" name="middlename"  placeholder="Middle name">   
 
                 <label for="Age">Age</label>
-                <input type="number" id="age"  name="age" min="5" required> 
+                <input type="text" id="age" name="age"  pattern="[0-9]+" required> 
 
                 <label for="Birthday">Birthday</label>
                 <input type="date" id="birthday" name="birthday" required> 
@@ -49,19 +49,19 @@
             <div class="father-details">
                 <label for="FatherName">Father's Name</label>
                 <input type="text" id="fathername" name="fathername"  >
-                <input type="number" class="telephoneNum" name="fathertelno"  placeholder="Telephone No.">
+                <input type="text" class="telephoneNum" name="fathertelno" pattern="[0-9]+"  placeholder="Telephone No.">
             </div>
 
             <div class="mother-details">
                 <label for="MotherName">Mother's Name</label>
                 <input type="text" id="mothername" name="mothername"  >
-                <input type="number" class="telephoneNum" name="mothertelno"  placeholder="Telephone No.">
+                <input type="text" class="telephoneNum" name="mothertelno" pattern="[0-9]+" placeholder="Telephone No.">
             </div>
 
             <div class="guardian-details">
                 <label for="guardianName">Guardian's Name</label>
                 <input type="text" id="guardianname" name="guardianname"  >
-                <input type="number" class="telephoneNum" name="guardiantelno"  placeholder="Telephone No.">
+                <input type="text" class="telephoneNum" name="guardiantelno" pattern="[0-9]+" placeholder="Telephone No.">
             </div>
             <hr>
             <div>
@@ -75,7 +75,7 @@
                 <div>
                     <label for="name">Name</label>
                     <input type="text" id="AvailableGuardianName" name="availableGuardianName" required>
-                    <input type="number" id="AvailableGuardianTelno" name="availableGuardianTelno" placeholder="Telephone No." required>
+                    <input type="text" id="AvailableGuardianTelno" name="availableGuardianTelno" pattern="[0-9]+" placeholder="Telephone No." required>
                 </div>
             </div>
             <hr>
@@ -146,15 +146,15 @@
                 <hr>
 
                 <p><b>COVID 19 VACCINE:</b> Please check the appropriate boxes.</p>
-                <input type="checkbox" id="1stDose" class="1stDose" name="COVID19VACCINE1" value="1stDose" required>
+                <input type="checkbox" id="1stDose" class="1stDose" name="COVID19VACCINE1" value="1st Dose" onchange="toggleRequired()" >
                 <label for="1stDose">1st Dose</label><br>
-                <input type="checkbox" class="2ndDose" name="COVID19VACCINE2" value="2ndDose" required>
+                <input type="checkbox" class="2ndDose" name="COVID19VACCINE2" value="2nd Dose" onchange="toggleRequired()" >
                 <label for="2ndDose">2nd Dose</label><br>
-                <input type="checkbox" class="Booster1" name="COVID19VACCINE3" value="Booster1" required >
+                <input type="checkbox" class="Booster1" name="COVID19VACCINE3" value="Booster 1" onchange="toggleRequired()"  >
                 <label for="Booster1">Booster 1</label><br>
-                <input type="checkbox" class="Booster2" name="COVID19VACCINE4" value="Booster2" required>
+                <input type="checkbox" class="Booster2" name="COVID19VACCINE4" value="Booster 2" onchange="toggleRequired()" >
                 <label for="Booster2">Booster 2</label><br>
-                <input type="checkbox" class="notApplicable" name="COVID19VACCINE5" value="NotApplicable" required>
+                <input type="checkbox" class="notApplicable" name="COVID19VACCINE5" value="Not Applicable" onchange="toggleRequired()" >
                 <label for="notApplicable">Not Applicable</label><br>
             </div> 
             <hr>
