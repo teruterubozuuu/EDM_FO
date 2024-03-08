@@ -4,6 +4,52 @@
     $database = "emc_fo";
     $password = "Teru_bozu5162";
 
+    if (isset($_POST['update'])) 
+    {
+    $yearLevel = $_POST['yearlevel'];
+    $studentNumber = $_POST['studentNumber'];
+    $section = $_POST['section'];
+    $lastname = $_POST['lastname'];
+    $firstname = $_POST['firstname'];
+    $middlename = $_POST['middlename'];
+    $age = $_POST['age'];
+    $birthday = date('Y-m-d', strtotime($_POST['birthday']));
+    $address = $_POST['homeAddress'];
+    $fathername = $_POST['fathername'];
+    $fathertelno = $_POST['fathertelno'];
+    $mothername = $_POST['mothername'];
+    $mothertelno = $_POST['mothertelno'];
+    $guardianname = $_POST['guardianname'];
+    $guardiantelno = $_POST['guardiantelno'];
+    $yesNoAvailGuardian = $_POST['YesNoAvailGuardian'];
+    $availGuardianName = $_POST['availableGuardianName'];
+    $availGuardianTelno = $_POST['availableGuardianTelno'];
+
+    $testedPositive =$_POST['TestedPositive'];
+    $testedPositive_date = date('Y-m-d', strtotime($_POST['dateTested']));
+    $bruiseBleed =$_POST['BruiseBleed'];
+    $bruiseBleedInitialMngmt =$_POST['BruiseBleedInitialMngmt'];
+    $historyMedicalProb =$_POST['HistoryMedicalProb'];
+    $historyMedicalProbInitialMngmt=$_POST['HistoryMedicalProbInitialMngmt'];
+    $specialNeeds =$_POST['SpecialNeeds'];
+    $allergies=$_POST['Allergies'];
+    $allergiesInitialMngmt=$_POST['AllergiesInitialMngmt'];
+    $admitted =$_POST['Admitted'];
+    $admittedSpecify =$_POST['admittedSpecify'];
+    $immunizationComplete =$_POST['ImmunizationComplete'];
+    $specifyImmunization =$_POST['specifyImmunization'];
+
+    $checkbox1 = isset($_POST['COVID19VACCINE1']) ? $_POST['COVID19VACCINE1'] : '';
+    $checkbox2 = isset($_POST['COVID19VACCINE2']) ? $_POST['COVID19VACCINE2'] : '';
+    $checkbox3 = isset($_POST['COVID19VACCINE3']) ? $_POST['COVID19VACCINE3'] : '';
+    $checkbox4 = isset($_POST['COVID19VACCINE4']) ? $_POST['COVID19VACCINE4'] : '';
+    $checkbox5 = isset($_POST['COVID19VACCINE5']) ? $_POST['COVID19VACCINE5'] : '';
+
+    
+
+
+    }
+
     //Student Details
     $yearLevel = $_POST['yearlevel'];
     $studentNumber = $_POST['studentNumber'];
