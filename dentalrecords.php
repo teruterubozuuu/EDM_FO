@@ -374,10 +374,7 @@
                 VALUES('$studentnumber',' $promptDFAnomaly1',' $promptDFAnomaly2',' $promptDFAnomaly3',' $promptDFAnomaly4',' $promptDFAnomaly5',' $promptDFAnomaly6',' $promptDFAnomaly7')";
     
     
-    /*
-
-
-    */
+ 
 
     if ($conn->query($sql) === TRUE && $conn->query($sql2) === TRUE ) {
       echo "Record inserted successfully";
