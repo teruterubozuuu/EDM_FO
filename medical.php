@@ -16,7 +16,7 @@
     </header>
 
     <div class="medical-record">
-        <form action="records.php" method="POST">
+        <form action="medicalrecords.php" method="POST">
             <h2>Student Health Record</h2>
             <hr>
             <div class="patient-details">

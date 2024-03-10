@@ -113,6 +113,7 @@ table,td,th{
 td label{
     font-size:14px;
 
+
 }
 
 input[type=date]{
@@ -123,13 +124,9 @@ input:focus{
     outline:none;
 }
 td{
-    width:20px;
+    width:10px;
 }
 td input{
-    width:70px;
-}
-
-.assessment .label{
-    width:100px;
+    width:50px;
 }
 

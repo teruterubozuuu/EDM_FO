@@ -16,12 +16,15 @@
     </header>
 
     <div class="dental-record">
-        <form>
+        <form action="dentalrecords.php" method="POST">
             <h2>Dental Health Record</h2>
             <hr>
+            <label class="label">Student number</label>
+            <input type="text"  id="student-number" name="studentnumber"  required> <br>
+
             <label class="label">Name</label>
-            <input type="text"  id="lastname" name="lastname"  placeholder="Last name">
-            <input type="text"  id="firstname" name="firstname"  placeholder="First name">
+            <input type="text"  id="lastname" name="lastname"  placeholder="Last name" required>
+            <input type="text"  id="firstname" name="firstname"  placeholder="First name" required>
             <input type="text" id="middlename" name="middlename"  placeholder="Middle name">   
             <br>
             <label class="label" for="hospital">Hospital/Municipality</label>
@@ -34,7 +37,7 @@
             <label class="label" for="occupation">Occupation</label>
             <input type="text" id="occupation" name="occupation">
             <label class="label" for="civil-status">Civil Status</label>
-            <input type="text" id="civil-status" name="civil-status">
+            <input type="text" id="civil-status" name="civilstatus">
             <br>
             <label class="label" for="address">Address</label>
             <input type="text" id="address" name="address">
@@ -58,20 +61,20 @@
 
                 <tr>
                     <td class="label">Operation</td>
-                    <td><input type="number" min="1" max="5"></td>
-                    <td><input type="number" min="1" max="5"></td>
-                    <td><input type="number" min="1" max="5"></td>
-                    <td><input type="number" min="1" max="5"></td>
-                    <td><input type="number" min="1" max="5"></td>
+                    <td><input type="text" name="operation55" ></td>
+                    <td><input type="text" name="operation54"  ></td>
+                    <td><input type="text" name="operation53"  ></td>
+                    <td><input type="text" name="operation52" ></td>
+                    <td><input type="text" name="operation51" ></td>
                 </tr>
                 
                 <tr>
                     <td class="label">Condition</td>
-                    <td><input type="number" min="1" max="5"></td>
-                    <td><input type="number" min="1" max="5"></td>
-                    <td><input type="number" min="1" max="5"></td>
-                    <td><input type="number" min="1" max="5"></td>
-                    <td><input type="number" min="1" max="5"></td>
+                    <td><input type="text" name="condition55" ></td>
+                    <td><input type="text" name="condition54" ></td>
+                    <td><input type="text" name="condition53" ></td>
+                    <td><input type="text" name="condition52" ></td>
+                    <td><input type="text" name="condition51" ></td>
                 </tr>   
             </table>
             <br>
@@ -90,26 +93,26 @@
 
                 <tr>
                     <td class="label">Operation</td>
-                    <td><input type="number" min="1" max="5"></td>
-                    <td><input type="number" min="1" max="5"></td>
-                    <td><input type="number" min="1" max="5"></td>
-                    <td><input type="number" min="1" max="5"></td>
-                    <td><input type="number" min="1" max="5"></td>
-                    <td><input type="number" min="1" max="5"></td>
-                    <td><input type="number" min="1" max="5"></td>
-                    <td><input type="number" min="1" max="5"></td>
+                    <td><input type="text" name="operation18"></td>
+                    <td><input type="text" name="operation17"></td>
+                    <td><input type="text" name="operation16"></td>
+                    <td><input type="text" name="operation15"></td>
+                    <td><input type="text" name="operation14"></td>
+                    <td><input type="text" name="operation13"></td>
+                    <td><input type="text" name="operation12"></td>
+                    <td><input type="text" name="operation11"></td>
                 </tr>
                 
                 <tr>
                     <td class="label">Condition</td>
-                    <td><input type="number" min="1" max="5"></td>
-                    <td><input type="number" min="1" max="5"></td>
-                    <td><input type="number" min="1" max="5"></td>
-                    <td><input type="number" min="1" max="5"></td>
-                    <td><input type="number" min="1" max="5"></td>
-                    <td><input type="number" min="1" max="5"></td>
-                    <td><input type="number" min="1" max="5"></td>
-                    <td><input type="number" min="1" max="5"></td>
+                    <td><input type="text" name="condition18"></td>
+                    <td><input type="text" name="condition17"></td>
+                    <td><input type="text" name="condition16"></td>
+                    <td><input type="text" name="condition15"></td>
+                    <td><input type="text" name="condition14"></td>
+                    <td><input type="text" name="condition13"></td>
+                    <td><input type="text" name="condition12"></td>
+                    <td><input type="text" name="condition11"></td>
                 </tr>   
             </table>
 
@@ -127,20 +130,20 @@
 
                 <tr>
                     <td class="label">Operation</td>
-                    <td><input type="number" min="1" max="5"></td>
-                    <td><input type="number" min="1" max="5"></td>
-                    <td><input type="number" min="1" max="5"></td>
-                    <td><input type="number" min="1" max="5"></td>
-                    <td><input type="number" min="1" max="5"></td>
+                    <td><input type="text" name="operation61"></td>
+                    <td><input type="text" name="operation62" ></td>
+                    <td><input type="text" name="operation63" ></td>
+                    <td><input type="text" name="operation64" ></td>
+                    <td><input type="text" name="operation65" ></td>
                 </tr>
                 
                 <tr>
                     <td class="label">Condition</td>
-                    <td><input type="number" min="1" max="5"></td>
-                    <td><input type="number" min="1" max="5"></td>
-                    <td><input type="number" min="1" max="5"></td>
-                    <td><input type="number" min="1" max="5"></td>
-                    <td><input type="number" min="1" max="5"></td>
+                    <td><input type="text" name="condition61" ></td>
+                    <td><input type="text" name="condition62" ></td>
+                    <td><input type="text" name="condition63"  ></td>
+                    <td><input type="text" name="condition64" </td>
+                    <td><input type="text" name="condition65" ></td>
                 </tr>   
             </table>
             <br>
@@ -159,26 +162,26 @@
 
                 <tr>
                     <td class="label">Operation</td>
-                    <td><input type="number" min="1" max="5"></td>
-                    <td><input type="number" min="1" max="5"></td>
-                    <td><input type="number" min="1" max="5"></td>
-                    <td><input type="number" min="1" max="5"></td>
-                    <td><input type="number" min="1" max="5"></td>
-                    <td><input type="number" min="1" max="5"></td>
-                    <td><input type="number" min="1" max="5"></td>
-                    <td><input type="number" min="1" max="5"></td>
+                    <td><input type="text" name="operation21"></td>
+                    <td><input type="text" name="operation22"></td>
+                    <td><input type="text" name="operation23"></td>
+                    <td><input type="text" name="operation24"></td>
+                    <td><input type="text" name="operation25"></td>
+                    <td><input type="text" name="operation26"></td>
+                    <td><input type="text" name="operation27"></td>
+                    <td><input type="text" name="operation28"></td>
                 </tr>
                 
                 <tr>
                     <td class="label">Condition</td>
-                    <td><input type="number" min="1" max="5"></td>
-                    <td><input type="number" min="1" max="5"></td>
-                    <td><input type="number" min="1" max="5"></td>
-                    <td><input type="number" min="1" max="5"></td>
-                    <td><input type="number" min="1" max="5"></td>
-                    <td><input type="number" min="1" max="5"></td>
-                    <td><input type="number" min="1" max="5"></td>
-                    <td><input type="number" min="1" max="5"></td>
+                    <td><input type="text" name="condition21"></td>
+                    <td><input type="text" name="condition22"></td>
+                    <td><input type="text" name="condition23"></td>
+                    <td><input type="text" name="condition24"></td>
+                    <td><input type="text" name="condition25"></td>
+                    <td><input type="text" name="condition26"></td>
+                    <td><input type="text" name="condition27"></td>
+                    <td><input type="text" name="condition28"></td>
                 </tr>   
             </table>
 
@@ -199,26 +202,26 @@
 
                 <tr>
                     <td class="label">Operation</td>
-                    <td><input type="number" min="1" max="5"></td>
-                    <td><input type="number" min="1" max="5"></td>
-                    <td><input type="number" min="1" max="5"></td>
-                    <td><input type="number" min="1" max="5"></td>
-                    <td><input type="number" min="1" max="5"></td>
-                    <td><input type="number" min="1" max="5"></td>
-                    <td><input type="number" min="1" max="5"></td>
-                    <td><input type="number" min="1" max="5"></td>
+                    <td><input type="text" name="operation48"></td>
+                    <td><input type="text" name="operation47"></td>
+                    <td><input type="text" name="operation46"></td>
+                    <td><input type="text" name="operation45"></td>
+                    <td><input type="text" name="operation44"></td>
+                    <td><input type="text" name="operation43"></td>
+                    <td><input type="text" name="operation42"></td>
+                    <td><input type="text" name="operation41"></td>
                 </tr>
                 
                 <tr>
                     <td class="label">Condition</td>
-                    <td><input type="number" min="1" max="5"></td>
-                    <td><input type="number" min="1" max="5"></td>
-                    <td><input type="number" min="1" max="5"></td>
-                    <td><input type="number" min="1" max="5"></td>
-                    <td><input type="number" min="1" max="5"></td>
-                    <td><input type="number" min="1" max="5"></td>
-                    <td><input type="number" min="1" max="5"></td>
-                    <td><input type="number" min="1" max="5"></td>
+                    <td><input type="text" name="condition48"></td>
+                    <td><input type="text" name="condition47"></td>
+                    <td><input type="text" name="condition46"></td>
+                    <td><input type="text" name="condition45"></td>
+                    <td><input type="text" name="condition44"></td>
+                    <td><input type="text" name="condition43"></td>
+                    <td><input type="text" name="condition42"></td>
+                    <td><input type="text" name="condition41"></td>
                 </tr>   
             </table>
 
@@ -236,20 +239,20 @@
 
                 <tr>
                     <td class="label">Operation</td>
-                    <td><input type="number" min="1" max="5"></td>
-                    <td><input type="number" min="1" max="5"></td>
-                    <td><input type="number" min="1" max="5"></td>
-                    <td><input type="number" min="1" max="5"></td>
-                    <td><input type="number" min="1" max="5"></td>
+                    <td><input type="text" name="operation85" ></td>
+                    <td><input type="text" name="operation84"  ></td>
+                    <td><input type="text" name="operation83"  ></td>
+                    <td><input type="text" name="operation82" ></td>
+                    <td><input type="text" name="operation81" ></td>
                 </tr>
                 
                 <tr>
                     <td class="label">Condition</td>
-                    <td><input type="number" min="1" max="5"></td>
-                    <td><input type="number" min="1" max="5"></td>
-                    <td><input type="number" min="1" max="5"></td>
-                    <td><input type="number" min="1" max="5"></td>
-                    <td><input type="number" min="1" max="5"></td>
+                    <td><input type="text" name="condition85" ></td>
+                    <td><input type="text" name="condition84"  ></td>
+                    <td><input type="text" name="condition83"  ></td>
+                    <td><input type="text" name="condition82" ></td>
+                    <td><input type="text" name="condition81" ></td>
                 </tr>   
             </table>
 
@@ -272,32 +275,32 @@
 
                 <tr>
                     <td class="label">Operation</td>
-                    <td><input type="number" min="1" max="5"></td>
-                    <td><input type="number" min="1" max="5"></td>
-                    <td><input type="number" min="1" max="5"></td>
-                    <td><input type="number" min="1" max="5"></td>
-                    <td><input type="number" min="1" max="5"></td>
-                    <td><input type="number" min="1" max="5"></td>
-                    <td><input type="number" min="1" max="5"></td>
-                    <td><input type="number" min="1" max="5"></td>
+                    <td><input type="text" name="operation31"></td>
+                    <td><input type="text" name="operation32"></td>
+                    <td><input type="text" name="operation33"></td>
+                    <td><input type="text" name="operation34"></td>
+                    <td><input type="text" name="operation35"></td>
+                    <td><input type="text" name="operation36"></td>
+                    <td><input type="text" name="operation37"></td>
+                    <td><input type="text" name="operation38"></td>
                 </tr>
                 
                 <tr>
                     <td class="label">Condition</td>
-                    <td><input type="number" min="1" max="5"></td>
-                    <td><input type="number" min="1" max="5"></td>
-                    <td><input type="number" min="1" max="5"></td>
-                    <td><input type="number" min="1" max="5"></td>
-                    <td><input type="number" min="1" max="5"></td>
-                    <td><input type="number" min="1" max="5"></td>
-                    <td><input type="number" min="1" max="5"></td>
-                    <td><input type="number" min="1" max="5"></td>
+                    <td><input type="text" name="condition31"></td>
+                    <td><input type="text" name="condition32"></td>
+                    <td><input type="text" name="condition33"></td>
+                    <td><input type="text" name="condition34"></td>
+                    <td><input type="text" name="condition35"></td>
+                    <td><input type="text" name="condition36"></td>
+                    <td><input type="text" name="condition37"></td>
+                    <td><input type="text" name="condition38"></td>
                 </tr>   
             </table>
 
             <br>
 
-            <table class="assessment">
+            <table>
                 <tr class="label">
                     <th></th>
                     <th>71</th>
@@ -309,93 +312,93 @@
 
                 <tr>
                     <td class="label">Operation</td>
-                    <td><input type="number" min="1" max="5"></td>
-                    <td><input type="number" min="1" max="5"></td>
-                    <td><input type="number" min="1" max="5"></td>
-                    <td><input type="number" min="1" max="5"></td>
-                    <td><input type="number" min="1" max="5"></td>
+                    <td><input type="text" name="operation71" ></td>
+                    <td><input type="text" name="operation72"  ></td>
+                    <td><input type="text" name="operation73"  ></td>
+                    <td><input type="text" name="operation74" ></td>
+                    <td><input type="text" name="operation75" ></td>
                 </tr>
                 
                 <tr>
                     <td class="label">Condition</td>
-                    <td><input type="number" min="1" max="5"></td>
-                    <td><input type="number" min="1" max="5"></td>
-                    <td><input type="number" min="1" max="5"></td>
-                    <td><input type="number" min="1" max="5"></td>
-                    <td><input type="number" min="1" max="5"></td>
+                    <td><input type="text" name="condition71" ></td>
+                    <td><input type="text" name="condition72"  ></td>
+                    <td><input type="text" name="condition73"  ></td>
+                    <td><input type="text" name="condition74" ></td>
+                    <td><input type="text" name="condition75" ></td>
                 </tr>   
             </table>
 
             <br>
-            <table>
+            <table class="assessment">
                 <tr>
                     <th class="label">Date of Examination</th>
-                    <td colspan="2"><input type="date" name="date" value="date"></td>
-                    <td colspan="2"><input type="date" name="date" value="date"></td>
-                    <td colspan="2"><input type="date" name="date" value="date"></td>
-                    <td colspan="2"><input type="date" name="date" value="date"></td>
-                    <td colspan="2"><input type="date" name="date" value="date"></td>
-                    <td colspan="2"><input type="date" name="date" value="date"></td>
-                    <td colspan="2"><input type="date" name="date" value="date"></td>
+                    <td colspan="2"><input type="date" name="date1"></td>
+                    <td colspan="2"><input type="date" name="date2" ></td>
+                    <td colspan="2"><input type="date" name="date3" ></td>
+                    <td colspan="2"><input type="date" name="date4" ></td>
+                    <td colspan="2"><input type="date" name="date5" ></td>
+                    <td colspan="2"><input type="date" name="date6" ></td>
+                    <td colspan="2"><input type="date" name="date7" ></td>
                 </tr>
 
                 <tr>
                     <th class="label">Age Last Birthday</th>
-                    <td colspan="2"><input type="date" name="date" value="date"></td>
-                    <td colspan="2"><input type="date" name="date" value="date"></td>
-                    <td colspan="2"><input type="date" name="date" value="date"></td>
-                    <td colspan="2"><input type="date" name="date" value="date"></td>
-                    <td colspan="2"><input type="date" name="date" value="date"></td>
-                    <td colspan="2"><input type="date" name="date" value="date"></td>
-                    <td colspan="2"><input type="date" name="date" value="date"></td>
+                    <td colspan="2"><input type="text" name="ageLastBday1"></td>
+                    <td colspan="2"><input type="text" name="ageLastBday2" ></td>
+                    <td colspan="2"><input type="text" name="ageLastBday3" ></td>
+                    <td colspan="2"><input type="text" name="ageLastBday4"></td>
+                    <td colspan="2"><input type="text" name="ageLastBday5"></td>
+                    <td colspan="2"><input type="text" name="ageLastBday6"></td>
+                    <td colspan="2"><input type="text" name="ageLastBday7"></td>
                 </tr>
 
                 <tr>
                     <th class="label">Presence of Dental Caries</th>
                     <td colspan="2">
-                        <input type="radio" name="promptDentalCaries1" value="yes">
+                        <input type="radio" name="promptDentalCaries1" value="Yes">
                         <label>Yes</label>
                         <br>
                         <input type="radio" name="promptDentalCaries1" value="No">
                         <label>No</label>
                     </td>
                     <td colspan="2">
-                        <input type="radio" name="promptDentalCaries2" value="yes">
+                        <input type="radio" name="promptDentalCaries2" value="Yes">
                         <label>Yes</label>
                         <br>
                         <input type="radio" name="promptDentalCaries2" value="No">
                         <label>No</label>
                     </td>
                     <td colspan="2">
-                        <input type="radio" name="promptDentalCaries3" value="yes">
+                        <input type="radio" name="promptDentalCaries3" value="Yes">
                         <label>Yes</label>
                         <br>
                         <input type="radio" name="promptDentalCaries3" value="No">
                         <label>No</label>
                     </td>
                     <td colspan="2">
-                        <input type="radio" name="promptDentalCaries4" value="yes">
+                        <input type="radio" name="promptDentalCaries4" value="Yes">
                         <label>Yes</label>
                         <br>
                         <input type="radio" name="promptDentalCaries4" value="No">
                         <label>No</label>
                     </td>
                     <td colspan="2">
-                        <input type="radio" name="promptDentalCaries5" value="yes">
+                        <input type="radio" name="promptDentalCaries5" value="Yes">
                         <label>Yes</label>
                         <br>
                         <input type="radio" name="promptDentalCaries5" value="No">
                         <label>No</label>
                     </td>
                     <td colspan="2">
-                        <input type="radio" name="promptDentalCaries6" value="yes">
+                        <input type="radio" name="promptDentalCaries6" value="Yes">
                         <label>Yes</label>
                         <br>
                         <input type="radio" name="promptDentalCaries6" value="No">
                         <label>No</label>
                     </td>
                     <td colspan="2">
-                        <input type="radio" name="promptDentalCaries7" value="yes">
+                        <input type="radio" name="promptDentalCaries7" value="Yes">
                         <label>Yes</label>
                         <br>
                         <input type="radio" name="promptDentalCaries7" value="No">
@@ -406,49 +409,49 @@
                 <tr>
                     <th class="label">Presence of Gingivitis</th>
                     <td colspan="2">
-                        <input type="radio" name="promptGingivitis1" value="yes">
+                        <input type="radio" name="promptGingivitis1" value="Yes">
                         <label>Yes</label>
                         <br>
                         <input type="radio" name="promptGingivitis1" value="No">
                         <label>No</label>
                     </td>
                     <td colspan="2">
-                        <input type="radio" name="promptGingivitis2" value="yes">
+                        <input type="radio" name="promptGingivitis2" value="Yes">
                         <label>Yes</label>
                         <br>
                         <input type="radio" name="promptGingivitis2" value="No">
                         <label>No</label>
                     </td>
                     <td colspan="2">
-                        <input type="radio" name="promptGingivitis3" value="yes">
+                        <input type="radio" name="promptGingivitis3" value="Yes">
                         <label>Yes</label>
                         <br>
                         <input type="radio" name="promptGingivitis3" value="No">
                         <label>No</label>
                     </td>
                     <td colspan="2">
-                        <input type="radio" name="promptGingivitis4" value="yes">
+                        <input type="radio" name="promptGingivitis4" value="Yes">
                         <label>Yes</label>
                         <br>
                         <input type="radio" name="promptGingivitis4" value="No">
                         <label>No</label>
                     </td>
                     <td colspan="2">
-                        <input type="radio" name="promptGingivitis5" value="yes">
+                        <input type="radio" name="promptGingivitis5" value="Yes">
                         <label>Yes</label>
                         <br>
                         <input type="radio" name="promptGingivitis5" value="No">
                         <label>No</label>
                     </td>
                     <td colspan="2">
-                        <input type="radio" name="promptGingivitis6" value="yes">
+                        <input type="radio" name="promptGingivitis6" value="Yes">
                         <label>Yes</label>
                         <br>
                         <input type="radio" name="promptGingivitis6" value="No">
                         <label>No</label>
                     </td>
                     <td colspan="2">
-                        <input type="radio" name="promptGingivitis7" value="yes">
+                        <input type="radio" name="promptGingivitis7" value="Yes">
                         <label>Yes</label>
                         <br>
                         <input type="radio" name="promptGingivitis7" value="No">
@@ -459,49 +462,49 @@
                 <tr>
                     <th class="label">Presence of Periodontal Pocket</th>
                     <td colspan="2">
-                        <input type="radio" name="promptPeriodontal1" value="yes">
+                        <input type="radio" name="promptPeriodontal1" value="Yes">
                         <label>Yes</label>
                         <br>
                         <input type="radio" name="promptPeriodontal1" value="No">
                         <label>No</label>
                     </td>
                     <td colspan="2">
-                        <input type="radio" name="promptPeriodontal2" value="yes">
+                        <input type="radio" name="promptPeriodontal2" value="Yes">
                         <label>Yes</label>
                         <br>
                         <input type="radio" name="promptPeriodontal2" value="No">
                         <label>No</label>
                     </td>
                     <td colspan="2">
-                        <input type="radio" name="promptPeriodontal3" value="yes">
+                        <input type="radio" name="promptPeriodontal3" value="Yes">
                         <label>Yes</label>
                         <br>
                         <input type="radio" name="promptPeriodontal3" value="No">
                         <label>No</label>
                     </td>
                     <td colspan="2">
-                        <input type="radio" name="promptPeriodontal4" value="yes">
+                        <input type="radio" name="promptPeriodontal4" value="Yes">
                         <label>Yes</label>
                         <br>
                         <input type="radio" name="promptPeriodontal4" value="No">
                         <label>No</label>
                     </td>
                     <td colspan="2">
-                        <input type="radio" name="promptPeriodontal5" value="yes">
+                        <input type="radio" name="promptPeriodontal5" value="Yes">
                         <label>Yes</label>
                         <br>
                         <input type="radio" name="promptPeriodontal5" value="No">
                         <label>No</label>
                     </td>
                     <td colspan="2">
-                        <input type="radio" name="promptPeriodontal6" value="yes">
+                        <input type="radio" name="promptPeriodontal6" value="Yes">
                         <label>Yes</label>
                         <br>
                         <input type="radio" name="promptPeriodontal6" value="No">
                         <label>No</label>
                     </td>
                     <td colspan="2">
-                        <input type="radio" name="promptPeriodontal7" value="yes">
+                        <input type="radio" name="promptPeriodontal7" value="Yes">
                         <label>Yes</label>
                         <br>
                         <input type="radio" name="promptPeriodontal7" value="No">
@@ -512,21 +515,21 @@
                 <tr>
                     <th class="label">Presence of Oral Debris</th>
                     <td colspan="2">
-                        <input type="radio" name="promptOralDebris1" value="yes">
+                        <input type="radio" name="promptOralDebris1" value="Yes">
                         <label>Yes</label>
                         <br>
                         <input type="radio" name="promptOralDebris1" value="No">
                         <label>No</label>
                     </td>
                     <td colspan="2">
-                        <input type="radio" name="promptOralDebris2" value="yes">
+                        <input type="radio" name="promptOralDebris2" value="Yes">
                         <label>Yes</label>
                         <br>
                         <input type="radio" name="promptOralDebris2" value="No">
                         <label>No</label>
                     </td>
                     <td colspan="2">
-                        <input type="radio" name="promptOralDebris3" value="yes">
+                        <input type="radio" name="promptOralDebris3" value="Yes">
                         <label>Yes</label>
                         <br>
                         <input type="radio" name="promptOralDebris3" value="No">
@@ -540,21 +543,21 @@
                         <label>No</label>
                     </td>
                     <td colspan="2">
-                        <input type="radio" name="promptOralDebris5" value="yes">
+                        <input type="radio" name="promptOralDebris5" value="Yes">
                         <label>Yes</label>
                         <br>
                         <input type="radio" name="promptOralDebris5" value="No">
                         <label>No</label>
                     </td>
                     <td colspan="2">
-                        <input type="radio" name="promptOralDebris6" value="yes">
+                        <input type="radio" name="promptOralDebris6" value="Yes">
                         <label>Yes</label>
                         <br>
                         <input type="radio" name="promptOralDebris6" value="No">
                         <label>No</label>
                     </td>
                     <td colspan="2">
-                        <input type="radio" name="promptOralDebris7" value="yes">
+                        <input type="radio" name="promptOralDebris7" value="Yes">
                         <label>Yes</label>
                         <br>
                         <input type="radio" name="promptOralDebris7" value="No">
@@ -565,49 +568,49 @@
                 <tr>
                     <th class="label">Presence of Calculus</th>
                     <td colspan="2">
-                        <input type="radio" name="promptCalculus1" value="yes">
+                        <input type="radio" name="promptCalculus1" value="Yes">
                         <label>Yes</label>
                         <br>
                         <input type="radio" name="promptCalculus1" value="No">
                         <label>No</label>
                     </td>
                     <td colspan="2">
-                        <input type="radio" name="promptCalculus2" value="yes">
+                        <input type="radio" name="promptCalculus2" value="Yes">
                         <label>Yes</label>
                         <br>
                         <input type="radio" name="promptCalculus2" value="No">
                         <label>No</label>
                     </td>
                     <td colspan="2">
-                        <input type="radio" name="promptCalculus3" value="yes">
+                        <input type="radio" name="promptCalculus3" value="Yes">
                         <label>Yes</label>
                         <br>
                         <input type="radio" name="promptCalculus3" value="No">
                         <label>No</label>
                     </td>
                     <td colspan="2">
-                        <input type="radio" name="promptCalculus4" value="yes">
+                        <input type="radio" name="promptCalculus4" value="Yes">
                         <label>Yes</label>
                         <br>
                         <input type="radio" name="promptCalculus4" value="No">
                         <label>No</label>
                     </td>
                     <td colspan="2">
-                        <input type="radio" name="promptCalculus5" value="yes">
+                        <input type="radio" name="promptCalculus5" value="Yes">
                         <label>Yes</label>
                         <br>
                         <input type="radio" name="promptCalculus5" value="No">
                         <label>No</label>
                     </td>
                     <td colspan="2">
-                        <input type="radio" name="promptCalculus6" value="yes">
+                        <input type="radio" name="promptCalculus6" value="Yes">
                         <label>Yes</label>
                         <br>
                         <input type="radio" name="promptCalculus6" value="No">
                         <label>No</label>
                     </td>
                     <td colspan="2">
-                        <input type="radio" name="promptCalculus7" value="yes">
+                        <input type="radio" name="promptCalculus7" value="Yes">
                         <label>Yes</label>
                         <br>
                         <input type="radio" name="promptCalculus7" value="No">
@@ -618,49 +621,49 @@
                 <tr>
                     <th class="label">Presence of Neoplasm</th>
                     <td colspan="2">
-                        <input type="radio" name="promptNeoplasm1" value="yes">
+                        <input type="radio" name="promptNeoplasm1" value="Yes">
                         <label>Yes</label>
                         <br>
                         <input type="radio" name="promptNeoplasm1" value="No">
                         <label>No</label>
                     </td>
                     <td colspan="2">
-                        <input type="radio" name="promptNeoplasm2" value="yes">
+                        <input type="radio" name="promptNeoplasm2" value="Yes">
                         <label>Yes</label>
                         <br>
                         <input type="radio" name="promptNeoplasm2" value="No">
                         <label>No</label>
                     </td>
                     <td colspan="2">
-                        <input type="radio" name="promptNeoplasm3" value="yes">
+                        <input type="radio" name="promptNeoplasm3" value="Yes">
                         <label>Yes</label>
                         <br>
                         <input type="radio" name="promptNeoplasm3" value="No">
                         <label>No</label>
                     </td>
                     <td colspan="2">
-                        <input type="radio" name="promptNeoplasm4" value="yes">
+                        <input type="radio" name="promptNeoplasm4" value="Yes">
                         <label>Yes</label>
                         <br>
                         <input type="radio" name="promptNeoplasm4" value="No">
                         <label>No</label>
                     </td>
                     <td colspan="2">
-                        <input type="radio" name="promptNeoplasm5" value="yes">
+                        <input type="radio" name="promptNeoplasm5" value="Yes">
                         <label>Yes</label>
                         <br>
                         <input type="radio" name="promptNeoplasm5" value="No">
                         <label>No</label>
                     </td>
                     <td colspan="2">
-                        <input type="radio" name="promptNeoplasm6" value="yes">
+                        <input type="radio" name="promptNeoplasm6" value="Yes">
                         <label>Yes</label>
                         <br>
                         <input type="radio" name="promptNeoplasm6" value="No">
                         <label>No</label>
                     </td>
                     <td colspan="2">
-                        <input type="radio" name="promptNeoplasm7" value="yes">
+                        <input type="radio" name="promptNeoplasm7" value="Yes">
                         <label>Yes</label>
                         <br>
                         <input type="radio" name="promptNeoplasm7" value="No">
@@ -671,49 +674,49 @@
                 <tr>
                     <th class="label">Presence of Dento-facial Anomaly</th>
                     <td colspan="2">
-                        <input type="radio" name="promptDFAnomaly1" value="yes">
+                        <input type="radio" name="promptDFAnomaly1" value="Yes">
                         <label>Yes</label>
                         <br>
                         <input type="radio" name="promptDFAnomaly1" value="No">
                         <label>No</label>
                     </td>
                     <td colspan="2">
-                        <input type="radio" name="promptDFAnomaly2" value="yes">
+                        <input type="radio" name="promptDFAnomaly2" value="Yes">
                         <label>Yes</label>
                         <br>
                         <input type="radio" name="promptDFAnomaly2" value="No">
                         <label>No</label>
                     </td>
                     <td colspan="2">
-                        <input type="radio" name="promptDFAnomaly3" value="yes">
+                        <input type="radio" name="promptDFAnomaly3" value="Yes">
                         <label>Yes</label>
                         <br>
                         <input type="radio" name="promptDFAnomaly3" value="No">
                         <label>No</label>
                     </td>
                     <td colspan="2">
-                        <input type="radio" name="promptDFAnomaly4" value="yes">
+                        <input type="radio" name="promptDFAnomaly4" value="Yes">
                         <label>Yes</label>
                         <br>
                         <input type="radio" name="promptDFAnomaly4" value="No">
                         <label>No</label>
                     </td>
                     <td colspan="2">
-                        <input type="radio" name="promptDFAnomaly5" value="yes">
+                        <input type="radio" name="promptDFAnomaly5" value="Yes">
                         <label>Yes</label>
                         <br>
                         <input type="radio" name="promptDFAnomaly5" value="No">
                         <label>No</label>
                     </td>
                     <td colspan="2"> 
-                        <input type="radio" name="promptDFAnomaly6" value="yes">
+                        <input type="radio" name="promptDFAnomaly6" value="Yes">
                         <label>Yes</label>
                         <br>
                         <input type="radio" name="promptDFAnomaly6" value="No">
                         <label>No</label>
                     </td>
                     <td colspan="2">
-                        <input type="radio" name="promptDFAnomaly7" value="yes">
+                        <input type="radio" name="promptDFAnomaly7" value="Yes">
                         <label>Yes</label>
                         <br>
                         <input type="radio" name="promptDFAnomaly7" value="No">
@@ -740,155 +743,157 @@
                 
                 <tr>
                     <td class="label">Number of Teeth Present</td>
-                    <td><input type="number"></td>
-                    <td><input type="number"></td>
-                    <td><input type="number"></td>
-                    <td><input type="number"></td>
-                    <td><input type="number"></td>
-                    <td><input type="number"></td>
-                    <td><input type="number"></td>
-                    <td><input type="number"></td>
-                    <td><input type="number"></td>
-                    <td><input type="number"></td>
-                    <td><input type="number"></td>
-                    <td><input type="number"></td>
-                    <td><input type="number"></td>
-                    <td><input type="number"></td>
+                    <td><input type="text" name="teeth1"></td>
+                    <td><input type="text" name="teeth2"></td>
+                    <td><input type="text" name="teeth3"></td>
+                    <td><input type="text" name="teeth4"></td>
+                    <td><input type="text" name="teeth5"></td>
+                    <td><input type="text" name="teeth6"></td>
+                    <td><input type="text" name="teeth7"></td>
+                    <td><input type="text" name="teeth8"></td>
+                    <td><input type="text" name="teeth9"></td>
+                    <td><input type="text" name="teeth10"></td>
+                    <td><input type="text" name="teeth11"></td>
+                    <td><input type="text" name="teeth12"></td>
+                    <td><input type="text" name="teeth13"></td>
+                    <td><input type="text" name="teeth14"></td>
 
                 </tr>
 
                 <tr>
                     <td class="label">Caries Indicated for Filling</td>
-                    <td><input type="text"></td>
-                    <td><input type="text"></td>
-                    <td><input type="text"></td>
-                    <td><input type="text"></td>
-                    <td><input type="text"></td>
-                    <td><input type="text"></td>
-                    <td><input type="text"></td>
-                    <td><input type="text"></td>
-                    <td><input type="text"></td>
-                    <td><input type="text"></td>
-                    <td><input type="text"></td>
-                    <td><input type="text"></td>
-                    <td><input type="text"></td>
-                    <td><input type="text"></td>
+                    <td><input type="text" name="cariesFilling1"></td>
+                    <td><input type="text" name="cariesFilling2"></td>
+                    <td><input type="text" name="cariesFilling3"></td>
+                    <td><input type="text" name="cariesFilling4"></td>
+                    <td><input type="text" name="cariesFilling5"></td>
+                    <td><input type="text" name="cariesFilling6"></td>
+                    <td><input type="text" name="cariesFilling7"></td>
+                    <td><input type="text" name="cariesFilling8"></td>
+                    <td><input type="text" name="cariesFilling9"></td>
+                    <td><input type="text" name="cariesFilling10"></td>
+                    <td><input type="text" name="cariesFilling11"></td>
+                    <td><input type="text" name="cariesFilling12"></td>
+                    <td><input type="text" name="cariesFilling13"></td>
+                    <td><input type="text" name="cariesFilling14"></td>
                 </tr>
 
                 <tr>
                     <td class="label">Caries Indicated for Extraction</td>
-                    <td><input type="text"></td>
-                    <td><input type="text"></td>
-                    <td><input type="text"></td>
-                    <td><input type="text"></td>
-                    <td><input type="text"></td>
-                    <td><input type="text"></td>
-                    <td><input type="text"></td>
-                    <td><input type="text"></td>
-                    <td><input type="text"></td>
-                    <td><input type="text"></td>
-                    <td><input type="text"></td>
-                    <td><input type="text"></td>
-                    <td><input type="text"></td>
-                    <td><input type="text"></td>
+                    <td><input type="text" name="carriesExtract1"></td>
+                    <td><input type="text" name="carriesExtract2"></td>
+                    <td><input type="text" name="carriesExtract3"></td>
+                    <td><input type="text" name="carriesExtract4"></td>
+                    <td><input type="text" name="carriesExtract5"></td>
+                    <td><input type="text" name="carriesExtract6"></td>
+                    <td><input type="text" name="carriesExtract7"></td>
+                    <td><input type="text" name="carriesExtract8"></td>
+                    <td><input type="text" name="carriesExtract9"></td>
+                    <td><input type="text" name="carriesExtract10"></td>
+                    <td><input type="text" name="carriesExtract11"></td>
+                    <td><input type="text" name="carriesExtract12"></td>
+                    <td><input type="text" name="carriesExtract13"></td>
+                    <td><input type="text" name="carriesExtract14"></td>
                 </tr>
 
                 <tr>
                     <td class="label">Root Fragment</td>
-                    <td><input type="text"></td>
-                    <td><input type="text"></td>
-                    <td><input type="text"></td>
-                    <td><input type="text"></td>
-                    <td><input type="text"></td>
-                    <td><input type="text"></td>
-                    <td><input type="text"></td>
-                    <td><input type="text"></td>
-                    <td><input type="text"></td>
-                    <td><input type="text"></td>
-                    <td><input type="text"></td>
-                    <td><input type="text"></td>
-                    <td><input type="text"></td>
-                    <td><input type="text"></td>
+                    <td><input type="text" name="rootFragment1"></td>
+                    <td><input type="text" name="rootFragment2"></td>
+                    <td><input type="text" name="rootFragment3"></td>
+                    <td><input type="text" name="rootFragment4"></td>
+                    <td><input type="text" name="rootFragment5"></td>
+                    <td><input type="text" name="rootFragment6"></td>
+                    <td><input type="text" name="rootFragment7"></td>
+                    <td><input type="text" name="rootFragment8"></td>
+                    <td><input type="text" name="rootFragment9"></td>
+                    <td><input type="text" name="rootFragment10"></td>
+                    <td><input type="text" name="rootFragment11"></td>
+                    <td><input type="text" name="rootFragment12"></td>
+                    <td><input type="text" name="rootFragment13"></td>
+                    <td><input type="text" name="rootFragment14"></td>
                 </tr>
 
                 <tr>
                     <td class="label">Missing Due to Caries</td>
                     <td>X</td>
-                    <td><input type="text"></td>
+                    <td><input type="text" name="missingCaries1"></td>
                     <td>X</td>
-                    <td><input type="text"></td>
+                    <td><input type="text" name="missingCaries2"></td>
                     <td>X</td>
-                    <td><input type="text"></td>
+                    <td><input type="text" name="missingCaries3"></td>
                     <td>X</td>
-                    <td><input type="text"></td>
+                    <td><input type="text" name="missingCaries4"></td>
                     <td>X</td>
-                    <td><input type="text"></td>
+                    <td><input type="text" name="missingCaries5"></td>
                     <td>X</td>
-                    <td><input type="text"></td>
+                    <td><input type="text" name="missingCaries6"></td>
                     <td>X</td>
-                    <td><input type="text"></td>
+                    <td><input type="text" name="missingCaries7"></td>
                 </tr>
 
                 <tr>
                     <td class="label">Filled or Restored</td>
-                    <td><input type="text"></td>
-                    <td><input type="text"></td>
-                    <td><input type="text"></td>
-                    <td><input type="text"></td>
-                    <td><input type="text"></td>
-                    <td><input type="text"></td>
-                    <td><input type="text"></td>
-                    <td><input type="text"></td>
-                    <td><input type="text"></td>
-                    <td><input type="text"></td>
-                    <td><input type="text"></td>
-                    <td><input type="text"></td>
-                    <td><input type="text"></td>
-                    <td><input type="text"></td>
+                    <td><input type="text" name="filledRestored1"></td>
+                    <td><input type="text" name="filledRestored2"></td>
+                    <td><input type="text" name="filledRestored3"></td>
+                    <td><input type="text" name="filledRestored4"></td>
+                    <td><input type="text" name="filledRestored5"></td>
+                    <td><input type="text" name="filledRestored6"></td>
+                    <td><input type="text" name="filledRestored7"></td>
+                    <td><input type="text" name="filledRestored8"></td>
+                    <td><input type="text" name="filledRestored9"></td>
+                    <td><input type="text" name="filledRestored10"></td>
+                    <td><input type="text" name="filledRestored11"></td>
+                    <td><input type="text" name="filledRestored12"></td>
+                    <td><input type="text" name="filledRestored13"></td>
+                    <td><input type="text" name="filledRestored14"></td>
                 </tr>
 
                 <tr>
                     <td class="label">Total df and DMF Teeth</td>
-                    <td><input type="text"></td>
-                    <td><input type="text"></td>
-                    <td><input type="text"></td>
-                    <td><input type="text"></td>
-                    <td><input type="text"></td>
-                    <td><input type="text"></td>
-                    <td><input type="text"></td>
-                    <td><input type="text"></td>
-                    <td><input type="text"></td>
-                    <td><input type="text"></td>
-                    <td><input type="text"></td>
-                    <td><input type="text"></td>
-                    <td><input type="text"></td>
-                    <td><input type="text"></td>
+                    <td><input type="text" name="totaldfDMF1"></td>
+                    <td><input type="text" name="totaldfDMF2"></td>
+                    <td><input type="text" name="totaldfDMF3"></td>
+                    <td><input type="text" name="totaldfDMF4"></td>
+                    <td><input type="text" name="totaldfDMF5"></td>
+                    <td><input type="text" name="totaldfDMF6"></td>
+                    <td><input type="text" name="totaldfDMF7"></td>
+                    <td><input type="text" name="totaldfDMF8"></td>
+                    <td><input type="text" name="totaldfDMF9"></td>
+                    <td><input type="text" name="totaldfDMF10"></td>
+                    <td><input type="text" name="totaldfDMF11"></td>
+                    <td><input type="text" name="totaldfDMF12"></td>
+                    <td><input type="text" name="totaldfDMF13"></td>
+                    <td><input type="text" name="totaldfDMF14"></td>
                 </tr>
 
                 <tr>
                     <td class="label">Fluoride Application</td>
-                    <td colspan="2"><input type="text" name="fluorideApplication"></td>
-                    <td colspan="2"><input type="text" name="fluorideApplication"></td>
-                    <td colspan="2"><input type="text" name="fluorideApplication"></td>
-                    <td colspan="2"><input type="text" name="fluorideApplication"></td>
-                    <td colspan="2"><input type="text" name="fluorideApplication"></td>
-                    <td colspan="2"><input type="text" name="fluorideApplication"></td>
-                    <td colspan="2"><input type="text" name="fluorideApplication"></td>
+                    <td colspan="2"><input type="text" name="fluorideApplication1"></td>
+                    <td colspan="2"><input type="text" name="fluorideApplication2"></td>
+                    <td colspan="2"><input type="text" name="fluorideApplication3"></td>
+                    <td colspan="2"><input type="text" name="fluorideApplication4"></td>
+                    <td colspan="2"><input type="text" name="fluorideApplication5"></td>
+                    <td colspan="2"><input type="text" name="fluorideApplication6"></td>
+                    <td colspan="2"><input type="text" name="fluorideApplication7"></td>
                     
                 </tr>
 
                 <tr>
                     <td class="label">Examiner</td>
-                    <td colspan="2"><input type="text" name="examinerName"></td>
-                    <td colspan="2"><input type="text" name="examinerName"></td>
-                    <td colspan="2"><input type="text" name="examinerName"></td>
-                    <td colspan="2"><input type="text" name="examinerName"></td>
-                    <td colspan="2"><input type="text" name="examinerName"></td>
-                    <td colspan="2"><input type="text" name="examinerName"></td>
-                    <td colspan="2"><input type="text" name="examinerName"></td>
+                    <td colspan="2"><input type="text" name="examinerName1"></td>
+                    <td colspan="2"><input type="text" name="examinerName2"></td>
+                    <td colspan="2"><input type="text" name="examinerName3"></td>
+                    <td colspan="2"><input type="text" name="examinerName4"></td>
+                    <td colspan="2"><input type="text" name="examinerName5"></td>
+                    <td colspan="2"><input type="text" name="examinerName6"></td>
+                    <td colspan="2"><input type="text" name="examinerName7"></td>
                 </tr>
 
             </table>
+
+            <button type="submit">Submit</button>
         </form>   
     </div>
 </body>
