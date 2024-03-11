@@ -315,13 +315,7 @@
     $fluorideApplication5 = $_POST['fluorideApplication5'];
     $fluorideApplication6 = $_POST['fluorideApplication6'];
     $fluorideApplication7 = $_POST['fluorideApplication7'];
-    $fluorideApplication8 = $_POST['fluorideApplication8'];
-    $fluorideApplication9 = $_POST['fluorideApplication9'];
-    $fluorideApplication10 = $_POST['fluorideApplication10'];
-    $fluorideApplication11 = $_POST['fluorideApplication11'];
-    $fluorideApplication12 = $_POST['fluorideApplication12'];
-    $fluorideApplication13 = $_POST['fluorideApplication13'];
-    $fluorideApplication14 = $_POST['fluorideApplication14'];
+
 
     $examinerName1 = $_POST['examinerName1'];
     $examinerName2 = $_POST['examinerName2'];
@@ -342,43 +336,80 @@
       $sql = "INSERT INTO dental_student_details(student_number,lastname,firstname,middlename,hospital_municipality,school_firm,birthdate,occupation,civil_status,address,patient_status)
               VALUES('$studentnumber','$lastname',' $firstname','$middlename','$hospital','$school','$dob','$occupation','$civilstatus',' $address',' $patient')";
 
-      $sql2 = "INSERT INTO upper_right(student_number,operation_55, operation_54, operation_53, operation_52, operation_51,condition_55,condition_54, condition_53,condition_52, condition_51, operation_18,
+     
+     $sql2 = "INSERT INTO upper_right(student_number,operation_55, operation_54, operation_53, operation_52, operation_51,condition_55,condition_54, condition_53,condition_52, condition_51, operation_18,
                                        operation_17,  operation_16,  operation_15,  operation_14,  operation_13,  operation_12,  operation_11, condition_18,condition_17,condition_16,condition_15,condition_14,condition_13,condition_12,condition_11)
                 VALUES('$studentnumber','$operation55','$operation54',' $operation53','$operation52','$operation51','$condition55',' $condition54','  $condition53 ',' $condition52','$condition51','$operation18','$operation17','$operation16','$operation15','$operation14',
                         '$operation13','$operation12','$operation11','$condition18','$condition17','$condition16','$condition15','$condition14','$condition13','$condition12','$condition11')";
-      $sql3 = "INSERT INTO upper_left(student_number,operation_61,operation_62,operation_63,operation_64,operation_65,condition_61,condition_62,condition_63,condition_64,condition_65,operation_21,operation_22,operation_23,operation_24,operation_25
+      
+      $sql3 = "INSERT INTO upper_left(student_number,operation_61,operation_62,operation_63,operation_64,operation_65,condition_61,condition_62,condition_63,condition_64,condition_65,operation_21,operation_22,operation_23,operation_24,operation_25,
                             operation_26,operation_27,operation_28, condition_21,condition_22,condition_23,condition_24,condition_25,condition_26,condition_27,condition_28)
                 VALUES('$studentnumber',' $operation61 ', '$operation62',' $operation63','$operation64', '$operation65','$condition61',' $condition62',' $condition63',' $condition64','$condition65',                  
                        ' $operation21 ', '$operation22 ', '$operation23 ', '$operation24 ', '$operation25 ', ' $operation26  ', '$operation27 ', '$operation28  ', '$condition21 ', '$condition22 ', '$condition23 ','$condition24 ','$condition25 ', '$condition26 ', '$condition27 ', '$condition28 ') ";
+      
       $sql4 = "INSERT INTO lower_right(student_number,operation_48,operation_47,operation_46,operation_45,operation_44,operation_43,operation_42,operation_41,condition_48,condition_47,condition_46 ,condition_45 ,condition_44 ,condition_43 ,condition_42 ,condition_41,
                 operation_85,operation_84,operation_83,operation_82,operation_81,condition_85,condition_84,condition_83,condition_82,condition_81)
-                VALUES('$studentnumber','$operation48','$operation47','$operation46','$operation45','$operation44','$operation43','$operation42','$operation41','$condition48', '$condition47','$condition46','$condition45','$condition44','$condition43',$condition42','$condition41'
+                VALUES('$studentnumber','$operation48','$operation47','$operation46','$operation45','$operation44','$operation43','$operation42','$operation41','$condition48', '$condition47','$condition46','$condition45','$condition44','$condition43','$condition42','$condition41',
                         '$operation85','$operation84','$operation83','$operation82','$operation81','$condition85','$condition84','$condition83','$condition82','$condition81')";
+      $sql23 = "INSERT INTO lower_left (student_number,operation_31,operation_32,operation_33,operation_34,operation_35,operation_36,operation_37,operation_38,condition_31,condition_32,condition_33,condition_34,condition_35,condition_36,condition_37,condition_38,operation_71,operation_72,operation_73,operation_74,operation_75,condition_71,condition_72,condition_73,condition_74,condition_75 )
+                VALUES ('$studentnumber','$operation31','$operation32','$operation33','$operation34','$operation35','$operation36','$operation37','$operation38','$condition31','$condition32','$condition33','$condition34','$condition35','$condition36','$condition37','$condition38',
+                        '$operation71','$operation72','$operation73','$operation74','$operation75','$condition71','$condition72','$condition73','$condition74','$condition75' )";
+      
       $sql5 = "INSERT INTO examination_date(student_number,date_1,date_2,date_3,date_4,date_5,date_6,date_7)
-                VALUES('$date1','$date2','$date3','$date4','$date5','$date6','$date7')";
+                VALUES('$studentnumber','$date1','$date2','$date3','$date4','$date5','$date6','$date7')";
+
       $sql6 = "INSERT INTO age_last_birthday(student_number,age_1,age_2,age_3,age_4,age_5,age_6,age_7)
                 VALUES('$studentnumber', '$ageLastBday1', '$ageLastBday2', '$ageLastBday3 ', '$ageLastBday4 ', '$ageLastBday5 ', '$ageLastBday6 ', '$ageLastBday7 ')";
-      $sql7 = "INSERT INTO presence_dental_caries(student_number,dentalCaries_1,dentalCaries_2,dentalCaries_3,dentalCaries_4,dentalCaries_5,dentalCaries_6,dentalCaries_7)
+     
+     $sql7 = "INSERT INTO presence_dental_caries(student_number,dentalCaries_1,dentalCaries_2,dentalCaries_3,dentalCaries_4,dentalCaries_5,dentalCaries_6,dentalCaries_7)
                 VALUES('$studentnumber','$promptDentalCaries1 ','$promptDentalCaries2 ', ' $promptDentalCaries3 ', '$promptDentalCaries4 ' , '$promptDentalCaries5 ', '$promptDentalCaries6 ', '$promptDentalCaries7 ' )";
-      $sql8 = "INSERT INTO presence_gingivitis(student_number,gingivitis1,gingivitis2,gingivitis3,gingivitis4,gingivitis5,gingivitis6,gingivitis7 )
+     
+     $sql8 = "INSERT INTO presence_gingivitis(student_number,gingivitis1,gingivitis2,gingivitis3,gingivitis4,gingivitis5,gingivitis6,gingivitis7 )
                 VALUES('$studentnumber','$promptGingivitis1','$promptGingivitis2','$promptGingivitis3','$promptGingivitis4','$promptGingivitis5','$promptGingivitis6','$promptGingivitis7')";
-      $sql9 = "INSERT INTO presence_periodontal_pocket(periodontal_pocket1,periodontal_pocket2,periodontal_pocket3,periodontal_pocket4,periodontal_pocket5,periodontal_pocket6,periodontal_pocket7)
+      
+      $sql9 = "INSERT INTO presence_periodontal_pocket(student_number,periodontal_pocket1,periodontal_pocket2,periodontal_pocket3,periodontal_pocket4,periodontal_pocket5,periodontal_pocket6,periodontal_pocket7)
                 VALUES('$studentnumber ', ' $promptPeriodontal1 ', ' $promptPeriodontal2 ', ' $promptPeriodontal3 ', ' $promptPeriodontal4 ', ' $promptPeriodontal5 ', ' $promptPeriodontal6 ', ' $promptPeriodontal7 ')";
+      
       $sql10 = "INSERT INTO presence_oral_debris(student_number,oraldebris1,oraldebris2,oraldebris3,oraldebris4,oraldebris5,oraldebris6,oraldebris7)
                 VALUES('$studentnumber ', '$promptOralDebris1 ', '$promptOralDebris2 ', '$promptOralDebris3 ', '$promptOralDebris4 ', '$promptOralDebris5 ', '$promptOralDebris6 ', '$promptOralDebris7 ' )";
+      
       $sql11 = "INSERT INTO presence_calculus(student_number,calculus1,calculus2,calculus3,calculus4,calculus5,calculus6,calculus7)
                 VALUES('$studentnumber ', '$promptCalculus1','$promptCalculus2','$promptCalculus3','$promptCalculus4','$promptCalculus5','$promptCalculus6','$promptCalculus7')";
+      
       $sql12 = "INSERT INTO presence_neoplasm (student_number,neoplasm1,neoplasm2,neoplasm3,neoplasm4,neoplasm5,neoplasm6,neoplasm7)
                 VALUES('$studentnumber',' $promptNeoplasm1',' $promptNeoplasm2',' $promptNeoplasm3',' $promptNeoplasm4',' $promptNeoplasm5',' $promptNeoplasm6',' $promptNeoplasm7')";
+      
       $sql13 = "INSERT INTO presence_df_anomaly(student_number,DF_anomaly1,DF_anomaly2,DF_anomaly3,DF_anomaly4,DF_anomaly5,DF_anomaly6,DF_anomaly7)
                 VALUES('$studentnumber',' $promptDFAnomaly1',' $promptDFAnomaly2',' $promptDFAnomaly3',' $promptDFAnomaly4',' $promptDFAnomaly5',' $promptDFAnomaly6',' $promptDFAnomaly7')";
-    
-    
- 
+      
+      $sql14 = "INSERT INTO num_teeth_present(student_number,teeth1,teeth2,teeth3,teeth4,teeth5,teeth6,teeth7,teeth8,teeth9,teeth10,teeth11,teeth12,teeth13,teeth14)
+                VALUES('$studentnumber','$teeth1','$teeth2','$teeth3','$teeth4','$teeth5','$teeth6','$teeth7','$teeth8','$teeth9','$teeth10','$teeth11','$teeth12','$teeth13','$teeth14')";
+      
+      $sql15 = "INSERT INTO caries_indicated_filling(student_number,caries_filling1,caries_filling2,caries_filling3,caries_filling4,caries_filling5,caries_filling6,caries_filling7,caries_filling8,caries_filling9,caries_filling10,caries_filling11,caries_filling12,caries_filling13,caries_filling14)
+                VALUES('$studentnumber',' $cariesFilling1',' $cariesFilling2',' $cariesFilling3',' $cariesFilling4',' $cariesFilling5',' $cariesFilling6',' $cariesFilling7',' $cariesFilling8',' $cariesFilling9',' $cariesFilling10',' $cariesFilling11',' $cariesFilling12',' $cariesFilling13',' $cariesFilling14')";
+      
+      $sql16 = "INSERT INTO caries_indicated_extraction(student_number,indicated_extraction1,indicated_extraction2,indicated_extraction3,indicated_extraction4,indicated_extraction5,indicated_extraction6,indicated_extraction7,indicated_extraction8,indicated_extraction9,indicated_extraction10,indicated_extraction11,indicated_extraction12,indicated_extraction13,indicated_extraction14 )
+                VALUES('$studentnumber',' $carriesExtract1','$carriesExtract2','$carriesExtract3','$carriesExtract4','$carriesExtract5','$carriesExtract6','$carriesExtract7','$carriesExtract8','$carriesExtract9','$carriesExtract10','$carriesExtract11','$carriesExtract12','$carriesExtract13','$carriesExtract14' )";
+      
+      $sql17 = "INSERT INTO root_fragment(student_number,rootFragment1,rootFragment2,rootFragment3,rootFragment4,rootFragment5,rootFragment6,rootFragment7,rootFragment8,rootFragment9,rootFragment10,rootFragment11,rootFragment12,rootFragment13,rootFragment14 )
+                VALUES('$studentnumber',' $rootFragment1',' $rootFragment2',' $rootFragment3',' $rootFragment4',' $rootFragment5',' $rootFragment6',' $rootFragment7',' $rootFragment8',' $rootFragment9',' $rootFragment10',' $rootFragment11',' $rootFragment12',' $rootFragment13',' $rootFragment14' )";
+      
+      $sql18 = "INSERT INTO missing_caries(student_number,missingCaries1,missingCaries2,missingCaries3,missingCaries4,missingCaries5,missingCaries6,missingCaries7)
+                VALUES('$studentnumber','$missingCaries1','$missingCaries2','$missingCaries3','$missingCaries4','$missingCaries5','$missingCaries6','$missingCaries7' )";
+      
+      $sql19 = "INSERT INTO filled_restored(student_number,filledRestored1,filledRestored2,filledRestored3,filledRestored4,filledRestored5,filledRestored6,filledRestored7,filledRestored8,filledRestored9,filledRestored10,filledRestored11,filledRestored12,filledRestored13,filledRestored14 )
+                VALUES('$studentnumber',' $filledRestored1',' $filledRestored2',' $filledRestored3',' $filledRestored4',' $filledRestored5',' $filledRestored6',' $filledRestored7',' $filledRestored8',' $filledRestored9',' $filledRestored10',' $filledRestored11',' $filledRestored12',' $filledRestored13',' $filledRestored14' )";
+      $sql20 = "INSERT INTO total_df_dmf(student_number,df_DMF1,df_DMF2,df_DMF3,df_DMF4,df_DMF5,df_DMF6,df_DMF7,df_DMF8,df_DMF9,df_DMF10,df_DMF11,df_DMF12,df_DMF13,df_DMF14 )
+                VALUES ('$studentnumber','$totaldfDMF1','$totaldfDMF2','$totaldfDMF3','$totaldfDMF4','$totaldfDMF5','$totaldfDMF6','$totaldfDMF7','$totaldfDMF8','$totaldfDMF9','$totaldfDMF10','$totaldfDMF11','$totaldfDMF12','$totaldfDMF13','$totaldfDMF14'  ) ";
+      $sql21 = "INSERT INTO fluoride_application(student_number,fluoride_application1,fluoride_application2,fluoride_application3,fluoride_application4,fluoride_application5,fluoride_application6,fluoride_application7)
+                VALUES ('$studentnumber','$fluorideApplication1','$fluorideApplication2','$fluorideApplication3','$fluorideApplication4','$fluorideApplication5','$fluorideApplication6','$fluorideApplication7' )";
+      $sql22 = "INSERT INTO examiner_name(student_number,examiner_name1,examiner_name2,examiner_name3,examiner_name4,examiner_name5,examiner_name6,examiner_name7 )
+                VALUES ('$studentnumber','$examinerName1','$examinerName2','$examinerName3','$examinerName4','$examinerName5','$examinerName6','$examinerName7' ) ";
 
-    if ($conn->query($sql) === TRUE && $conn->query($sql2) === TRUE ) {
+    if ($conn->query($sql) === TRUE && $conn->query($sql2) === TRUE && $conn->query($sql3) === TRUE && $conn->query($sql4) === TRUE && $conn->query($sql5) === TRUE && $conn->query($sql6) === TRUE && $conn->query($sql7) === TRUE && $conn->query($sql8) === TRUE && $conn->query($sql9) === TRUE && $conn->query($sql10) === TRUE && $conn->query($sql11) === TRUE && $conn->query($sql12) === TRUE && $conn->query($sql13) === TRUE && $conn->query($sql14) === TRUE && $conn->query($sql15) === TRUE && $conn->query($sql16) === TRUE && $conn->query($sql17) === TRUE && $conn->query($sql18) === TRUE && $conn->query($sql19) === TRUE && $conn->query($sql20) === TRUE && $conn->query($sql21) === TRUE && $conn->query($sql22) === TRUE){
       echo "Record inserted successfully";
-    } else {
+    } 
+    else {
       echo "Error: " . $sql . "<br>" . $conn->error;
     }
 

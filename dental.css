@@ -127,6 +127,9 @@ td{
     width:10px;
 }
 td input{
-    width:50px;
+    width:70px;
 }
 
+.assessment td{
+    width:10%;
+}
