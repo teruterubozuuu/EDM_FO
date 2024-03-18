@@ -133,3 +133,33 @@ td input{
     width:10%;
 }
 
+.medicalLink a, .dashboardLink a{
+    text-decoration: none;
+    color:rgb(150, 150, 150);
+}
+
+.dentalLink a{
+    color:rgb(252, 12, 12);
+    text-decoration: none;
+    color:rgb(71, 71, 71);
+}
+
+
+
+p{
+    font-weight: 500;
+}
+
+.submitBtn{
+    margin:auto;
+    justify-content: center;
+    text-align: center;
+    display:flex;
+    padding:5px 20px;
+    border-radius: 5px;
+    border:1px solid rgb(32, 32, 32);
+    font-family: 'Poppins',sans-serif;
+    cursor: pointer;
+    margin-top:1%;
+    background-color: white;
+}

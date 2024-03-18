@@ -94,8 +94,19 @@ div.medical-record{
     border:1px solid rgb(32, 32, 32);
     font-family: 'Poppins',sans-serif;
     cursor: pointer;
+    background-color: white;
 }
 
 #homeAddress{
     width:98%;
+}
+
+.dentalLink a, .dashboardLink a{
+    text-decoration: none;
+    color:rgb(150, 150, 150);
+}
+
+.medicalLink a{
+    text-decoration: none;
+    color:rgb(71, 71, 71);
 }
