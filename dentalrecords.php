@@ -22,7 +22,7 @@
 
     if(isset($_POST['update'])) {
 
-      $student = mysqli_real_escape_string($conn, $_POST['studentNumber']);
+      $student = mysqli_real_escape_string($conn, $_POST['studentnumber']);
 
       // WHERE student_number = '$student' ";
 
@@ -348,96 +348,106 @@
     $examinerName7 = $_POST['examinerName7'];
 
     $query1 = "UPDATE dental_student_details SET 
-              
+               student_number = '$studentnumber',
+               lastname = '$lastname',
+               firstname = '$firstname',
+               middlename = '$middlename',
+               hospital_municipality = '$hospital',
+               school_firm = '$school',
+               birthdate = '$dob',
+               occupation = '$occupation',
+               civil_status = '$civilstatus',
+               address = '$address',
+               patient_status = '$patient' 
               WHERE student_number = '$student' ";
 
-    $query2 = "UPDATE upper_right SET
-    
-               WHERE student_number = '$student' ";
-
-    $query3 = "UPDATE upper_left SET
-    
-               WHERE student_number = '$student' ";  
-  
-    $query4 = "UPDATE lower_right SET 
-              
-              WHERE student_number = '$student' ";
-
-    $query5 = "UPDATE lower_left SET
-    
-               WHERE student_number = '$student' ";
-
-    $query6 = "UPDATE examination_date SET
-    
-               WHERE student_number = '$student' "; 
-        
-    $query7 = "UPDATE age_last_birthday SET 
-              
-               WHERE student_number = '$student' ";
-
-    $query8 = "UPDATE presence_dental_caries SET
-
-               WHERE student_number = '$student' ";
-
-    $query9 = "UPDATE presence_gingivitis SET
-
-               WHERE student_number = '$student' ";  
-
-    $query10 = "UPDATE presence_periodontal_pocket SET 
-        
-               WHERE student_number = '$student' ";
-
-    $query11 = "UPDATE presence_oral_debris SET
-
-               WHERE student_number = '$student' ";
-
-    $query12 = "UPDATE presence_calculus SET
-
-               WHERE student_number = '$student' "; 
-  
-    $query13 = "UPDATE presence_neoplasm SET 
-              
-              WHERE student_number = '$student' ";
-
-    $query14 = "UPDATE presence_df_anomaly SET
-    
-               WHERE student_number = '$student' ";
-
-    $query15 = "UPDATE num_teeth_present SET
-    
-               WHERE student_number = '$student' ";  
-  
-    $query16 = "UPDATE caries_indicated_filling SET 
-              
-              WHERE student_number = '$student' ";
-
-    $query17 = "UPDATE caries_indicated_extraction SET
-    
-               WHERE student_number = '$student' ";
-
-    $query18 = "UPDATE root_fragment SET
-    
-               WHERE student_number = '$student' "; 
-        
-    $query19 = "UPDATE missing_caries SET 
-              
-               WHERE student_number = '$student' ";
-
-    $query20 = "UPDATE filled_restored SET
-
-               WHERE student_number = '$student' ";
-
-    $query21 = "UPDATE total_df_dmf SET
-
-               WHERE student_number = '$student' ";  
-
-    $query22 = "UPDATE fluoride_application SET 
-        
-               WHERE student_number = '$student' ";
-
-    $query23 = "UPDATE examiner_name SET
-
-               WHERE student_number = '$student' ";
+    // $query2 = "UPDATE upper_right SET
+    // 
+    //            WHERE student_number = '$student' ";
+// 
+    // $query3 = "UPDATE upper_left SET
+    // 
+    //            WHERE student_number = '$student' ";  
+  // 
+    // $query4 = "UPDATE lower_right SET 
+    //           
+    //           WHERE student_number = '$student' ";
+// 
+    // $query5 = "UPDATE lower_left SET
+    // 
+    //            WHERE student_number = '$student' ";
+// 
+    // $query6 = "UPDATE examination_date SET
+    // 
+    //            WHERE student_number = '$student' "; 
+    //     
+    // $query7 = "UPDATE age_last_birthday SET 
+    //           
+    //            WHERE student_number = '$student' ";
+// 
+    // $query8 = "UPDATE presence_dental_caries SET
+// 
+    //            WHERE student_number = '$student' ";
+// 
+    // $query9 = "UPDATE presence_gingivitis SET
+// 
+    //            WHERE student_number = '$student' ";  
+// 
+    // $query10 = "UPDATE presence_periodontal_pocket SET 
+    //     
+    //            WHERE student_number = '$student' ";
+// 
+    // $query11 = "UPDATE presence_oral_debris SET
+// 
+    //            WHERE student_number = '$student' ";
+// 
+    // $query12 = "UPDATE presence_calculus SET
+// 
+    //            WHERE student_number = '$student' "; 
+  // 
+    // $query13 = "UPDATE presence_neoplasm SET 
+    //           
+    //           WHERE student_number = '$student' ";
+// 
+    // $query14 = "UPDATE presence_df_anomaly SET
+    // 
+    //            WHERE student_number = '$student' ";
+// 
+    // $query15 = "UPDATE num_teeth_present SET
+    // 
+    //            WHERE student_number = '$student' ";  
+  // 
+    // $query16 = "UPDATE caries_indicated_filling SET 
+    //           
+    //           WHERE student_number = '$student' ";
+// 
+    // $query17 = "UPDATE caries_indicated_extraction SET
+    // 
+    //            WHERE student_number = '$student' ";
+// 
+    // $query18 = "UPDATE root_fragment SET
+    // 
+    //            WHERE student_number = '$student' "; 
+    //     
+    // $query19 = "UPDATE missing_caries SET 
+    //           
+    //            WHERE student_number = '$student' ";
+// 
+    // $query20 = "UPDATE filled_restored SET
+// 
+    //            WHERE student_number = '$student' ";
+// 
+    // $query21 = "UPDATE total_df_dmf SET
+// 
+    //            WHERE student_number = '$student' ";  
+// 
+    // $query22 = "UPDATE fluoride_application SET 
+    //     
+    //            WHERE student_number = '$student' ";
+// 
+    // $query23 = "UPDATE examiner_name SET
+// 
+    //            WHERE student_number = '$student' ";
 
 
     $query_run1 = mysqli_query($conn, $query1);
@@ -465,9 +475,9 @@
     $query_run23 = mysqli_query($conn, $query23);
 
     if($query_run1 && $query_run2 && $query_run3 && $query_run4 && $query_run5 && $query_run6 && $query_run7&& $query_run8&& $query_run9&& $query_run10 && $query_run11 && $query_run12 && $query_run13 && $query_run14 && $query_run15 && $query_run16 && $query_run17 && $query_run18 && $query_run19 && $query_run20 && $query_run21 && $query_run22 && $query_run23){
-      header("Location: studentlist.php");
+      header("Location: dentalstudentlist.php");
     } else {
-      header("Location: studentlist.php");
+      header("Location: dentalstudentlist.php");
     }
     }
 
