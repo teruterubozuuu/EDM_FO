@@ -67,8 +67,7 @@ require 'dbcon.php';
                     WHERE dental_student_details.student_number = '$student_id' ";
         $query_run = mysqli_query($con, $query);
 
-        if(mysqli_num_rows($query_run) > 0) 
-        {
+        if(mysqli_num_rows($query_run) > 0) {
             $student = mysqli_fetch_array($query_run);
             ?>
 
@@ -99,9 +98,9 @@ require 'dbcon.php';
             <label class="label" for="address">Address</label>
             <input type="text" id="address" name="address" value="<?=$student["address"];?>" >
             <br>
-            <input type="radio" id="in-patient" name="patient" value="Yes" <?php if($student['patient_status'] == 'Yes') {echo "checked";}?>>
+            <input type="radio" id="in-patient" name="patient" value="In" >
             <label class="label" for="in-patient">In Patient</label>
-            <input type="radio" id="out-patient" name="patient" value="No" <?php if($student['patient_status'] == 'No') {echo "checked";}?>>
+            <input type="radio" id="out-patient" name="patient" value="Out" >
             <label class="label" for="out-patient">Out Patient</label>
 
             <hr>
@@ -413,52 +412,52 @@ require 'dbcon.php';
                 <tr>
                     <th class="label">Presence of Dental Caries</th>
                     <td colspan="2">
-                        <input type="radio" id= "promptDentalCaries1Yes" name="promptDentalCaries1" value="Yes" <?php if($student['dentalCaries_1'] == 'Yes') {echo 'checked';}?>>
+                        <input type="radio" id= "promptDentalCaries1Yes" name="promptDentalCaries1" value="Yes" >
                         <label>Yes</label>
                         <br>
-                        <input type="radio" id= "promptDentalCaries1No" name="promptDentalCaries1" value="No" <?php if($student['dentalCaries_1'] == 'No') {echo 'checked';}?>>
+                        <input type="radio" id= "promptDentalCaries1No" name="promptDentalCaries1" value="No" >
                         <label>No</label>
                     </td>
                     <td colspan="2">
-                        <input type="radio" id= "promptDentalCaries2Yes" name="promptDentalCaries2" value="Yes" >
+                        <input type="radio" id= "promptDentalCaries2Yes" name="promptDentalCaries2" value="<?=$student["dentalCaries_2"];?>" >
                         <label>Yes</label>
                         <br>
-                        <input type="radio" id= "promptDentalCaries2No" name="promptDentalCaries2" value="No" >
+                        <input type="radio" id= "promptDentalCaries2No" name="promptDentalCaries2" value="<?=$student["dentalCaries_2"];?>" >
                         <label>No</label>
                     </td>
                     <td colspan="2">
-                        <input type="radio" name="promptDentalCaries3" value="" >
+                        <input type="radio" name="promptDentalCaries3" value="<?=$student["dentalCaries_3"];?>" >
                         <label>Yes</label>
                         <br>
-                        <input type="radio" name="promptDentalCaries3" value="" >
+                        <input type="radio" name="promptDentalCaries3" value="<?=$student["dentalCaries_3"];?>" >
                         <label>No</label>
                     </td>
                     <td colspan="2">
-                        <input type="radio" name="promptDentalCaries4" value="" >
+                        <input type="radio" name="promptDentalCaries4" value="<?=$student["dentalCaries_4"];?>" >
                         <label>Yes</label>
                         <br>
-                        <input type="radio" name="promptDentalCaries4" value="" >
+                        <input type="radio" name="promptDentalCaries4" value="<?=$student["dentalCaries_4"];?>" >
                         <label>No</label>
                     </td>
                     <td colspan="2">
-                        <input type="radio" name="promptDentalCaries5" value="" >
+                        <input type="radio" name="promptDentalCaries5" value="<?=$student["dentalCaries_5"];?>" >
                         <label>Yes</label>
                         <br>
-                        <input type="radio" name="promptDentalCaries5" value="" >
+                        <input type="radio" name="promptDentalCaries5" value="<?=$student["dentalCaries_5"];?>" >
                         <label>No</label>
                     </td>
                     <td colspan="2">
-                        <input type="radio" name="promptDentalCaries6" value="" >
+                        <input type="radio" name="promptDentalCaries6" value="<?=$student["dentalCaries_6"];?>" >
                         <label>Yes</label>
                         <br>
-                        <input type="radio" name="promptDentalCaries6" value="" >
+                        <input type="radio" name="promptDentalCaries6" value="<?=$student["dentalCaries_6"];?>" >
                         <label>No</label>
                     </td>
                     <td colspan="2">
-                        <input type="radio" name="promptDentalCaries7" value="" >
+                        <input type="radio" name="promptDentalCaries7" value="<?=$student["dentalCaries_7"];?>" >
                         <label>Yes</label>
                         <br>
-                        <input type="radio" name="promptDentalCaries7" value="" >
+                        <input type="radio" name="promptDentalCaries7" value="<?=$student["dentalCaries_7"];?>" >
                         <label>No</label>
                     </td>
                 </tr>
@@ -950,7 +949,7 @@ require 'dbcon.php';
 
             </table>
 
-            <button type="submit">Update</button>
+            <button type="submit" name ="update" class="submitBtn">Update</button>
         </form>   
     </div>
 
