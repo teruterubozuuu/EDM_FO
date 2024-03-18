@@ -20,6 +20,457 @@
       }
     }
 
+    if(isset($_POST['update'])) {
+
+      $student = mysqli_real_escape_string($conn, $_POST['studentNumber']);
+
+      // WHERE student_number = '$student' ";
+
+       //student details
+    $studentnumber = $_POST['studentnumber'];
+    $lastname = $_POST['lastname'];
+    $firstname = $_POST['firstname'];
+    $middlename = $_POST['middlename'];
+    $hospital = $_POST['hospital'];
+    $school = $_POST['school'];
+    $dob = $_POST['dob'];
+    $occupation = $_POST['occupation'];
+    $civilstatus = $_POST['civilstatus'];
+    $address = $_POST['address'];
+    $patient = $_POST['patient'];
+
+    //teeth assessment
+    $operation55 = $_POST['operation55'];
+    $operation54 = $_POST['operation54'];
+    $operation53 = $_POST['operation53'];
+    $operation52 = $_POST['operation52'];
+    $operation51 = $_POST['operation51'];
+
+    $condition55 = $_POST['condition55'];
+    $condition54 = $_POST['condition54'];
+    $condition53 = $_POST['condition53'];
+    $condition52 = $_POST['condition52'];
+    $condition51 = $_POST['condition51'];
+
+    $operation18 = $_POST['operation18'];
+    $operation17 = $_POST['operation17'];
+    $operation16 = $_POST['operation16'];
+    $operation15 = $_POST['operation15'];
+    $operation14 = $_POST['operation14'];
+    $operation13 = $_POST['operation13'];
+    $operation12 = $_POST['operation12'];
+    $operation11 = $_POST['operation11'];
+
+    $condition18 = $_POST['condition18'];
+    $condition17 = $_POST['condition17'];
+    $condition16 = $_POST['condition16'];
+    $condition15 = $_POST['condition15'];
+    $condition14 = $_POST['condition14'];
+    $condition13 = $_POST['condition13'];
+    $condition12 = $_POST['condition12'];
+    $condition11 = $_POST['condition11'];
+
+    $operation61 = $_POST['operation61'];
+    $operation62 = $_POST['operation62'];
+    $operation63 = $_POST['operation63'];
+    $operation64 = $_POST['operation64'];
+    $operation65 = $_POST['operation65'];
+
+    $condition61 = $_POST['condition61'];
+    $condition62 = $_POST['condition62'];
+    $condition63 = $_POST['condition63'];
+    $condition64 = $_POST['condition64'];
+    $condition65 = $_POST['condition65'];
+
+    $operation21 = $_POST['operation21'];
+    $operation22 = $_POST['operation22'];
+    $operation23 = $_POST['operation23'];
+    $operation24 = $_POST['operation24'];
+    $operation25 = $_POST['operation25'];
+    $operation26 = $_POST['operation26'];
+    $operation27 = $_POST['operation27'];
+    $operation28 = $_POST['operation28'];
+
+    $condition21 = $_POST['condition21'];
+    $condition22 = $_POST['condition22'];
+    $condition23 = $_POST['condition23'];
+    $condition24 = $_POST['condition24'];
+    $condition25 = $_POST['condition25'];
+    $condition26 = $_POST['condition26'];
+    $condition27 = $_POST['condition27'];
+    $condition28 = $_POST['condition28'];
+
+    $operation48 = $_POST['operation48'];
+    $operation47 = $_POST['operation47'];
+    $operation46 = $_POST['operation46'];
+    $operation45 = $_POST['operation45'];
+    $operation44 = $_POST['operation44'];
+    $operation43 = $_POST['operation43'];
+    $operation42 = $_POST['operation42'];
+    $operation41 = $_POST['operation41'];
+
+    $condition48 = $_POST['condition48'];
+    $condition47 = $_POST['condition47'];
+    $condition46 = $_POST['condition46'];
+    $condition45 = $_POST['condition45'];
+    $condition44 = $_POST['condition44'];
+    $condition43 = $_POST['condition43'];
+    $condition42 = $_POST['condition42'];
+    $condition41 = $_POST['condition41'];
+
+    $operation85 = $_POST['operation85'];
+    $operation84 = $_POST['operation84'];
+    $operation83 = $_POST['operation83'];
+    $operation82 = $_POST['operation82'];
+    $operation81 = $_POST['operation81'];
+
+    $condition85 = $_POST['condition85'];
+    $condition84 = $_POST['condition84'];
+    $condition83 = $_POST['condition83'];
+    $condition82 = $_POST['condition82'];
+    $condition81 = $_POST['condition81'];
+
+    $operation31 = $_POST['operation31'];
+    $operation32 = $_POST['operation32'];
+    $operation33 = $_POST['operation33'];
+    $operation34 = $_POST['operation34'];
+    $operation35 = $_POST['operation35'];
+    $operation36 = $_POST['operation36'];
+    $operation37 = $_POST['operation37'];
+    $operation38 = $_POST['operation38'];
+
+    $condition31 = $_POST['condition31'];
+    $condition32 = $_POST['condition32'];
+    $condition33 = $_POST['condition33'];
+    $condition34 = $_POST['condition34'];
+    $condition35 = $_POST['condition35'];
+    $condition36 = $_POST['condition36'];
+    $condition37 = $_POST['condition37'];
+    $condition38 = $_POST['condition38'];
+
+    $operation71 = $_POST['operation71'];
+    $operation72 = $_POST['operation72'];
+    $operation73 = $_POST['operation73'];
+    $operation74 = $_POST['operation74'];
+    $operation75 = $_POST['operation75'];
+
+    $condition71 = $_POST['condition71'];
+    $condition72 = $_POST['condition72'];
+    $condition73 = $_POST['condition73'];
+    $condition74 = $_POST['condition74'];
+    $condition75 = $_POST['condition75'];
+
+    $date1 = $_POST['date1'];
+    $date2 = $_POST['date2'];
+    $date3 = $_POST['date3'];
+    $date4 = $_POST['date4'];
+    $date5 = $_POST['date5'];
+    $date6 = $_POST['date6'];
+    $date7 = $_POST['date7'];
+
+    $ageLastBday1 = $_POST['ageLastBday1'];
+    $ageLastBday2 = $_POST['ageLastBday2'];
+    $ageLastBday3 = $_POST['ageLastBday3'];
+    $ageLastBday4 = $_POST['ageLastBday4'];
+    $ageLastBday5 = $_POST['ageLastBday5'];
+    $ageLastBday6 = $_POST['ageLastBday6'];
+    $ageLastBday7 = $_POST['ageLastBday7'];
+
+    $promptDentalCaries1 = $_POST['promptDentalCaries1'];
+    $promptDentalCaries2 = $_POST['promptDentalCaries2'];
+    $promptDentalCaries3 = $_POST['promptDentalCaries3'];
+    $promptDentalCaries4 = $_POST['promptDentalCaries4'];
+    $promptDentalCaries5 = $_POST['promptDentalCaries5'];
+    $promptDentalCaries6 = $_POST['promptDentalCaries6'];
+    $promptDentalCaries7 = $_POST['promptDentalCaries7'];
+
+    $promptGingivitis1 = $_POST['promptGingivitis1'];
+    $promptGingivitis2 = $_POST['promptGingivitis2'];
+    $promptGingivitis3 = $_POST['promptGingivitis3'];
+    $promptGingivitis4 = $_POST['promptGingivitis4'];
+    $promptGingivitis5 = $_POST['promptGingivitis5'];
+    $promptGingivitis6 = $_POST['promptGingivitis6'];
+    $promptGingivitis7 = $_POST['promptGingivitis7'];
+
+    $promptPeriodontal1 = $_POST['promptPeriodontal1'];
+    $promptPeriodontal2 = $_POST['promptPeriodontal2'];
+    $promptPeriodontal3 = $_POST['promptPeriodontal3'];
+    $promptPeriodontal4 = $_POST['promptPeriodontal4'];
+    $promptPeriodontal5 = $_POST['promptPeriodontal5'];
+    $promptPeriodontal6 = $_POST['promptPeriodontal6'];
+    $promptPeriodontal7 = $_POST['promptPeriodontal7'];
+
+    $promptOralDebris1 = $_POST['promptOralDebris1'];
+    $promptOralDebris2 = $_POST['promptOralDebris2'];
+    $promptOralDebris3 = $_POST['promptOralDebris3'];
+    $promptOralDebris4 = $_POST['promptOralDebris4'];
+    $promptOralDebris5 = $_POST['promptOralDebris5'];
+    $promptOralDebris6 = $_POST['promptOralDebris6'];
+    $promptOralDebris7 = $_POST['promptOralDebris7'];
+
+    $promptCalculus1 = $_POST['promptCalculus1'];
+    $promptCalculus2 = $_POST['promptCalculus2'];
+    $promptCalculus3 = $_POST['promptCalculus3'];
+    $promptCalculus4 = $_POST['promptCalculus4'];
+    $promptCalculus5 = $_POST['promptCalculus5'];
+    $promptCalculus6 = $_POST['promptCalculus6'];
+    $promptCalculus7 = $_POST['promptCalculus7'];
+
+    $promptNeoplasm1 = $_POST['promptNeoplasm1'];
+    $promptNeoplasm2 = $_POST['promptNeoplasm2'];
+    $promptNeoplasm3 = $_POST['promptNeoplasm3'];
+    $promptNeoplasm4 = $_POST['promptNeoplasm4'];
+    $promptNeoplasm5 = $_POST['promptNeoplasm5'];
+    $promptNeoplasm6 = $_POST['promptNeoplasm6'];
+    $promptNeoplasm7 = $_POST['promptNeoplasm7'];
+
+    $promptDFAnomaly1 = $_POST['promptDFAnomaly1'];
+    $promptDFAnomaly2 = $_POST['promptDFAnomaly2'];
+    $promptDFAnomaly3 = $_POST['promptDFAnomaly3'];
+    $promptDFAnomaly4 = $_POST['promptDFAnomaly4'];
+    $promptDFAnomaly5 = $_POST['promptDFAnomaly5'];
+    $promptDFAnomaly6 = $_POST['promptDFAnomaly6'];
+    $promptDFAnomaly7 = $_POST['promptDFAnomaly7'];
+
+    $teeth1 = $_POST['teeth1'];
+    $teeth2 = $_POST['teeth2'];
+    $teeth3 = $_POST['teeth3'];
+    $teeth4 = $_POST['teeth4'];
+    $teeth5 = $_POST['teeth5'];
+    $teeth6 = $_POST['teeth6'];
+    $teeth7 = $_POST['teeth7'];
+    $teeth8 = $_POST['teeth8'];
+    $teeth9 = $_POST['teeth9'];
+    $teeth10 = $_POST['teeth10'];
+    $teeth11 = $_POST['teeth11'];
+    $teeth12 = $_POST['teeth12'];
+    $teeth13 = $_POST['teeth13'];
+    $teeth14 = $_POST['teeth14'];
+
+    $cariesFilling1 = $_POST['cariesFilling1'];
+    $cariesFilling2 = $_POST['cariesFilling2'];
+    $cariesFilling3 = $_POST['cariesFilling3'];
+    $cariesFilling4 = $_POST['cariesFilling4'];
+    $cariesFilling5 = $_POST['cariesFilling5'];
+    $cariesFilling6 = $_POST['cariesFilling6'];
+    $cariesFilling7 = $_POST['cariesFilling7'];
+    $cariesFilling8 = $_POST['cariesFilling8'];
+    $cariesFilling9 = $_POST['cariesFilling9'];
+    $cariesFilling10 = $_POST['cariesFilling10'];
+    $cariesFilling11 = $_POST['cariesFilling11'];
+    $cariesFilling12 = $_POST['cariesFilling12'];
+    $cariesFilling13 = $_POST['cariesFilling13'];
+    $cariesFilling14 = $_POST['cariesFilling14'];
+
+    $carriesExtract1 = $_POST['carriesExtract1'];
+    $carriesExtract2 = $_POST['carriesExtract2'];
+    $carriesExtract3 = $_POST['carriesExtract3'];
+    $carriesExtract4 = $_POST['carriesExtract4'];
+    $carriesExtract5 = $_POST['carriesExtract5'];
+    $carriesExtract6 = $_POST['carriesExtract6'];
+    $carriesExtract7 = $_POST['carriesExtract7'];
+    $carriesExtract8 = $_POST['carriesExtract8'];
+    $carriesExtract9 = $_POST['carriesExtract9'];
+    $carriesExtract10 = $_POST['carriesExtract10'];
+    $carriesExtract11 = $_POST['carriesExtract11'];
+    $carriesExtract12 = $_POST['carriesExtract12'];
+    $carriesExtract13 = $_POST['carriesExtract13'];
+    $carriesExtract14 = $_POST['carriesExtract14'];
+
+    $rootFragment1 = $_POST['rootFragment1'];
+    $rootFragment2 = $_POST['rootFragment2'];
+    $rootFragment3 = $_POST['rootFragment3'];
+    $rootFragment4 = $_POST['rootFragment4'];
+    $rootFragment5 = $_POST['rootFragment5'];
+    $rootFragment6 = $_POST['rootFragment6'];
+    $rootFragment7 = $_POST['rootFragment7'];
+    $rootFragment8 = $_POST['rootFragment8'];
+    $rootFragment9 = $_POST['rootFragment9'];
+    $rootFragment10 = $_POST['rootFragment10'];
+    $rootFragment11 = $_POST['rootFragment11'];
+    $rootFragment12 = $_POST['rootFragment12'];
+    $rootFragment13 = $_POST['rootFragment13'];
+    $rootFragment14 = $_POST['rootFragment14'];
+
+    $missingCaries1 = $_POST['missingCaries1'];
+    $missingCaries2 = $_POST['missingCaries2'];
+    $missingCaries3 = $_POST['missingCaries3'];
+    $missingCaries4 = $_POST['missingCaries4'];
+    $missingCaries5 = $_POST['missingCaries5'];
+    $missingCaries6 = $_POST['missingCaries6'];
+    $missingCaries7 = $_POST['missingCaries7'];
+
+    $filledRestored1 = $_POST['filledRestored1'];
+    $filledRestored2 = $_POST['filledRestored2'];
+    $filledRestored3 = $_POST['filledRestored3'];
+    $filledRestored4 = $_POST['filledRestored4'];
+    $filledRestored5 = $_POST['filledRestored5'];
+    $filledRestored6 = $_POST['filledRestored6'];
+    $filledRestored7 = $_POST['filledRestored7'];
+    $filledRestored8 = $_POST['filledRestored8'];
+    $filledRestored9 = $_POST['filledRestored9'];
+    $filledRestored10 = $_POST['filledRestored10'];
+    $filledRestored11 = $_POST['filledRestored11'];
+    $filledRestored12 = $_POST['filledRestored12'];
+    $filledRestored13 = $_POST['filledRestored13'];
+    $filledRestored14 = $_POST['filledRestored14'];
+
+    $totaldfDMF1 = $_POST['totaldfDMF1'];
+    $totaldfDMF2 = $_POST['totaldfDMF2'];
+    $totaldfDMF3 = $_POST['totaldfDMF3'];
+    $totaldfDMF4 = $_POST['totaldfDMF4'];
+    $totaldfDMF5 = $_POST['totaldfDMF5'];
+    $totaldfDMF6 = $_POST['totaldfDMF6'];
+    $totaldfDMF7 = $_POST['totaldfDMF7'];
+    $totaldfDMF8 = $_POST['totaldfDMF8'];
+    $totaldfDMF9 = $_POST['totaldfDMF9'];
+    $totaldfDMF10 = $_POST['totaldfDMF10'];
+    $totaldfDMF11 = $_POST['totaldfDMF11'];
+    $totaldfDMF12 = $_POST['totaldfDMF12'];
+    $totaldfDMF13 = $_POST['totaldfDMF13'];
+    $totaldfDMF14 = $_POST['totaldfDMF14'];
+
+    $fluorideApplication1 = $_POST['fluorideApplication1'];
+    $fluorideApplication2 = $_POST['fluorideApplication2'];
+    $fluorideApplication3 = $_POST['fluorideApplication3'];
+    $fluorideApplication4 = $_POST['fluorideApplication4'];
+    $fluorideApplication5 = $_POST['fluorideApplication5'];
+    $fluorideApplication6 = $_POST['fluorideApplication6'];
+    $fluorideApplication7 = $_POST['fluorideApplication7'];
+
+
+    $examinerName1 = $_POST['examinerName1'];
+    $examinerName2 = $_POST['examinerName2'];
+    $examinerName3 = $_POST['examinerName3'];
+    $examinerName4 = $_POST['examinerName4'];
+    $examinerName5 = $_POST['examinerName5'];
+    $examinerName6 = $_POST['examinerName6'];
+    $examinerName7 = $_POST['examinerName7'];
+
+    $query1 = "UPDATE dental_student_details SET 
+              
+              WHERE student_number = '$student' ";
+
+    $query2 = "UPDATE upper_right SET
+    
+               WHERE student_number = '$student' ";
+
+    $query3 = "UPDATE upper_left SET
+    
+               WHERE student_number = '$student' ";  
+  
+    $query4 = "UPDATE lower_right SET 
+              
+              WHERE student_number = '$student' ";
+
+    $query5 = "UPDATE lower_left SET
+    
+               WHERE student_number = '$student' ";
+
+    $query6 = "UPDATE examination_date SET
+    
+               WHERE student_number = '$student' "; 
+        
+    $query7 = "UPDATE age_last_birthday SET 
+              
+               WHERE student_number = '$student' ";
+
+    $query8 = "UPDATE presence_dental_caries SET
+
+               WHERE student_number = '$student' ";
+
+    $query9 = "UPDATE presence_gingivitis SET
+
+               WHERE student_number = '$student' ";  
+
+    $query10 = "UPDATE presence_periodontal_pocket SET 
+        
+               WHERE student_number = '$student' ";
+
+    $query11 = "UPDATE presence_oral_debris SET
+
+               WHERE student_number = '$student' ";
+
+    $query12 = "UPDATE presence_calculus SET
+
+               WHERE student_number = '$student' "; 
+  
+    $query13 = "UPDATE presence_neoplasm SET 
+              
+              WHERE student_number = '$student' ";
+
+    $query14 = "UPDATE presence_df_anomaly SET
+    
+               WHERE student_number = '$student' ";
+
+    $query15 = "UPDATE num_teeth_present SET
+    
+               WHERE student_number = '$student' ";  
+  
+    $query16 = "UPDATE caries_indicated_filling SET 
+              
+              WHERE student_number = '$student' ";
+
+    $query17 = "UPDATE caries_indicated_extraction SET
+    
+               WHERE student_number = '$student' ";
+
+    $query18 = "UPDATE root_fragment SET
+    
+               WHERE student_number = '$student' "; 
+        
+    $query19 = "UPDATE missing_caries SET 
+              
+               WHERE student_number = '$student' ";
+
+    $query20 = "UPDATE filled_restored SET
+
+               WHERE student_number = '$student' ";
+
+    $query21 = "UPDATE total_df_dmf SET
+
+               WHERE student_number = '$student' ";  
+
+    $query22 = "UPDATE fluoride_application SET 
+        
+               WHERE student_number = '$student' ";
+
+    $query23 = "UPDATE examiner_name SET
+
+               WHERE student_number = '$student' ";
+
+
+    $query_run1 = mysqli_query($conn, $query1);
+    $query_run2 = mysqli_query($conn, $query2);
+    $query_run3 = mysqli_query($conn, $query3);
+    $query_run4 = mysqli_query($conn, $query4);
+    $query_run5 = mysqli_query($conn, $query5);
+    $query_run6 = mysqli_query($conn, $query6);
+    $query_run7 = mysqli_query($conn, $query7);
+    $query_run8 = mysqli_query($conn, $query8);
+    $query_run9 = mysqli_query($conn, $query9);
+    $query_run10 = mysqli_query($conn, $query10);
+    $query_run11 = mysqli_query($conn, $query11);
+    $query_run12 = mysqli_query($conn, $query12);
+    $query_run13 = mysqli_query($conn, $query13);
+    $query_run14 = mysqli_query($conn, $query14);
+    $query_run15 = mysqli_query($conn, $query15);
+    $query_run16 = mysqli_query($conn, $query16);
+    $query_run17 = mysqli_query($conn, $query17);
+    $query_run18 = mysqli_query($conn, $query18);
+    $query_run19 = mysqli_query($conn, $query19);
+    $query_run20 = mysqli_query($conn, $query20);
+    $query_run21 = mysqli_query($conn, $query21);
+    $query_run22 = mysqli_query($conn, $query22);
+    $query_run23 = mysqli_query($conn, $query23);
+
+    if($query_run1 && $query_run2 && $query_run3 && $query_run4 && $query_run5 && $query_run6 && $query_run7&& $query_run8&& $query_run9&& $query_run10 && $query_run11 && $query_run12 && $query_run13 && $query_run14 && $query_run15 && $query_run16 && $query_run17 && $query_run18 && $query_run19 && $query_run20 && $query_run21 && $query_run22 && $query_run23){
+      header("Location: studentlist.php");
+    } else {
+      header("Location: studentlist.php");
+    }
+    }
+
 
     //student details
     $studentnumber = $_POST['studentnumber'];
