@@ -4,6 +4,23 @@
     $database = "emc_fo";
     $password = "Teru_bozu5162";
 
+    $conn = new mysqli($servername, $username, "",$database);
+
+    if(isset($_POST['delete']))
+    {
+      $student = mysqli_real_escape_string($conn, $_POST['delete']);
+
+      $query = "DELETE FROM dental_student_details WHERE student_number = '$student' ";
+      $query_run = mysqli_query( $conn, $query );
+
+      if($query_run){
+        header("Location: dentalstudentlist.php");
+      } else {
+        header("Location: dentalstudentlist.php");
+      }
+    }
+
+
     //student details
     $studentnumber = $_POST['studentnumber'];
     $lastname = $_POST['lastname'];
@@ -326,7 +343,7 @@
     $examinerName7 = $_POST['examinerName7'];
 
     // Create connection
-    $conn = new mysqli($servername, $username, "",$database);
+    
 
      // Check connection
      if ($conn->connect_error) {

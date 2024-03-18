@@ -21,7 +21,10 @@ require 'dbcon.php';
         <div class="col-md-12">
             <div class="card">
                 <div class="card-header">
-                    <h4>Student Details</h4>
+                    <h4>Student Details
+                        <a href="dashboard.html" class="btn btn-primary float-end">Back to Dashboard</a>
+                    </h4>
+                    
                 </div>
                 <div class="card-body">
 
@@ -71,6 +74,8 @@ require 'dbcon.php';
         </div>
     </div>
 </div>
+
+
     
 </body>
 </html>

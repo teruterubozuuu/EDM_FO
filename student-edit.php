@@ -43,47 +43,47 @@ require 'dbcon.php';
             <hr>
             <div class="patient-details">
                 <label for="YearLevel">Year level</label>
-                <input type="text" name="yearLevel" value="<?=$student["year_level"];?>" readonly>
+                <input type="text" name="yearLevel" value="<?=$student["year_level"];?>" >
                 <label for="Section">Section</label>
-                <input type="text" id="section" name="section" value="<?=$student['section'];?>" readonly>
+                <input type="text" id="section" name="section" value="<?=$student['section'];?>" >
 
                 <label for="studentNumber">Student Number</label>
-                <input type="text" id="studentNumber" pattern="[0-9]+" name="studentNumber" value="<?=$student['student_number'];?>" readonly>
+                <input type="text" id="studentNumber" pattern="[0-9]+" name="studentNumber" readonly value="<?=$student['student_number'];?>" >
 
                 <br><label for="Name">Name</label>
-                <input type="text"  id="lastName" name="lastName"  value="<?=$student['student_lastname'];?>" readonly>
-                <input type="text"  id="firstname" name="firstName" value="<?=$student['student_firstname'];?>" readonly>
-                <input type="text" id="middlename" name="middleName"   value="<?=$student['student_middlename'];?>" readonly>   
+                <input type="text"  id="lastName" name="lastName"  value="<?=$student['student_lastname'];?>" >
+                <input type="text"  id="firstname" name="firstName" value="<?=$student['student_firstname'];?>" >
+                <input type="text" id="middlename" name="middleName"   value="<?=$student['student_middlename'];?>" >   
 
                 <label for="Age">Age</label>
-                <input type="text" id="age" name="age"  pattern="[0-9]+"  value="<?=$student['age'];?>" readonly> 
+                <input type="text" id="age" name="age"  pattern="[0-9]+"  value="<?=$student['age'];?>" > 
 
                 <label for="Birthday">Birthday</label>
-                <input type="date" id="birthday" name="birthday"  value="<?=$student['birthday'];?>" readonly> 
+                <input type="date" id="birthday" name="birthday"  value="<?=$student['birthday'];?>" > 
 
     
                 <br><label for="Address">Address</label>
-                <input type="text" id="homeAddress" name="homeAddress"  value="<?=$student['address'];?>" readonly>
+                <input type="text" id="homeAddress" name="homeAddress"  value="<?=$student['address'];?>" >
 
 
             </div>
 
             <div class="father-details">
                 <label for="FatherName">Father's Name</label>
-                <input type="text" id="fathername" name="fathername"  value="<?=$student['father_name'];?>" readonly>
-                <input type="text" class="telephoneNum" name="fathertelno" pattern="[0-9]+"  placeholder="Telephone No." value="<?=$student['father_telno'];?>" readonly>
+                <input type="text" id="fathername" name="fathername"  value="<?=$student['father_name'];?>" >
+                <input type="text" class="telephoneNum" name="fathertelno" pattern="[0-9]+"  placeholder="Telephone No." value="<?=$student['father_telno'];?>" >
             </div>
 
             <div class="mother-details">
                 <label for="MotherName">Mother's Name</label>
-                <input type="text" id="mothername" name="mothername"  value="<?=$student['mother_name'];?>" readonly>
-                <input type="text" class="telephoneNum" name="mothertelno" pattern="[0-9]+" placeholder="Telephone No." value="<?=$student['mother_telno'];?>" readonly>
+                <input type="text" id="mothername" name="mothername"  value="<?=$student['mother_name'];?>" >
+                <input type="text" class="telephoneNum" name="mothertelno" pattern="[0-9]+" placeholder="Telephone No." value="<?=$student['mother_telno'];?>" >
             </div>
 
             <div class="guardian-details">
                 <label for="guardianName">Guardian's Name</label>
-                <input type="text" id="guardianname" name="guardianname"  value="<?=$student['guardian_name'];?>" readonly>
-                <input type="text" class="telephoneNum" name="guardiantelno" pattern="[0-9]+" placeholder="Telephone No." value="<?=$student['guardian_telno'];?>" readonly>
+                <input type="text" id="guardianname" name="guardianname"  value="<?=$student['guardian_name'];?>" >
+                <input type="text" class="telephoneNum" name="guardiantelno" pattern="[0-9]+" placeholder="Telephone No." value="<?=$student['guardian_telno'];?>" >
             </div>
             <hr>
             <div>
@@ -96,8 +96,8 @@ require 'dbcon.php';
                 <p>If yes, please provide the name of person and contact no. :</p>
                 <div>
                     <label for="name">Name</label>
-                    <input type="text" id="AvailableGuardianName" name="availableGuardianName"  value="<?=$student['availableGuardian_name'];?>" readonly>
-                    <input type="text" id="AvailableGuardianTelno" name="availableGuardianTelno" pattern="[0-9]+" placeholder="Telephone No."  value="<?=$student['availableGuardian_telno'];?>" readonly>
+                    <input type="text" id="AvailableGuardianName" name="availableGuardianName"  value="<?=$student['availableGuardian_name'];?>" >
+                    <input type="text" id="AvailableGuardianTelno" name="availableGuardianTelno" pattern="[0-9]+" placeholder="Telephone No."  value="<?=$student['availableGuardian_telno'];?>" >
                 </div>
             </div>
             <hr>
@@ -112,7 +112,7 @@ require 'dbcon.php';
                 <input type="radio" id="noTestedPositive" class="no" name="TestedPositive"  value="No" <?php if($student['hasTestedPositive_COVID19'] == 'No') {echo "checked";}?>>
                 <label for="yesTestedPositive">No</label><br>
                 <label>If yes, please specify the date</label>
-                <input type="date" id="dateTestedPositive" name="dateTested" value="<?=$student['testedPositive_date'];?>" readonly>
+                <input type="date" id="dateTestedPositive" name="dateTested" value="<?=$student['testedPositive_date'];?>" >
                 <hr>
 
                 <p>Does your child bruise easily or bleed excessively after injury or tooth extraction?</p>
@@ -121,7 +121,7 @@ require 'dbcon.php';
                 <input type="radio" id="noEasilyExcessively" class="no" name="BruiseBleed" value="No" value="No" <?php if($student['bruiseEasily_bleedExcessively'] == 'No') {echo "checked";}?>>
                 <label for="no">No</label><br>
                 <label>If yes, please specify initial management.</label>
-                <input type="text" id="BruiseBleedInitialMngmt" class="initialMngmt" name="BruiseBleedInitialMngmt" value="<?=$student['bruiseBleed_initialManagement'];?>" readonly>
+                <input type="text" id="BruiseBleedInitialMngmt" class="initialMngmt" name="BruiseBleedInitialMngmt" value="<?=$student['bruiseBleed_initialManagement'];?>" >
                 <hr>
 
                 <p>Does your child have history of medical problems or disabilities about which Aquinas school should know?</p>
@@ -130,7 +130,7 @@ require 'dbcon.php';
                 <input type="radio" id="noHistoryMedicalProb" class="no" name="HistoryMedicalProb" value="No" value="No" <?php if($student['hasHistory_medicalProblems'] == 'No') {echo "checked";}?>>
                 <label for="no">No</label><br>
                 <label>If yes, please specify initial management.</label>
-                <input type="text" id="HistoryMedicalProbInitialMngmt" class="initialMngmt" name="HistoryMedicalProbInitialMngmt" value="<?=$student['medicalProblem_initialManagement'];?>" readonly>
+                <input type="text" id="HistoryMedicalProbInitialMngmt" class="initialMngmt" name="HistoryMedicalProbInitialMngmt" value="<?=$student['medicalProblem_initialManagement'];?>" >
                 <hr>
 
                 <p>Does your child have special needs in vision, hearing or speech, etc?</p>
@@ -146,7 +146,7 @@ require 'dbcon.php';
                 <input type="radio" id="noAllergies" class="no" name="Allergies" value="No" value="No" <?php if($student['has_allergies'] == 'No') {echo "checked";}?>>
                 <label for="No">No</label><br>
                 <label>If yes, please specify.</label> 
-                <input type="text" id="AllergiesInitialMngmt" class="specify" name="AllergiesInitialMngmt" value="<?=$student['specify_allergies'];?>" readonly>
+                <input type="text" id="AllergiesInitialMngmt" class="specify" name="AllergiesInitialMngmt" value="<?=$student['specify_allergies'];?>" >
                 <hr>
 
                 <p>Has your child been admitted for the past 6 months or sought consultation due to significant complaints?</p>
@@ -155,7 +155,7 @@ require 'dbcon.php';
                 <input type="radio" id="notAdmitted" class="no" name="Admitted" value="No" value="No" <?php if($student['admitted_dueToComplaints'] == 'No') {echo "checked";}?>>
                 <label for="no">No</label><br>
                 <label>If yes, please specify.</label>
-                <input type="text" id="admittedSpecify" class="specify" name="admittedSpecify" value="<?=$student['admitted_specification'];?>" readonly>
+                <input type="text" id="admittedSpecify" class="specify" name="admittedSpecify" value="<?=$student['admitted_specification'];?>" >
                 <hr>
 
                 <p><b>IMMUNIZATION</b> Complete?</p>
@@ -164,7 +164,7 @@ require 'dbcon.php';
                 <input type="radio" id="incompleteImmunization" class="no" name="ImmunizationComplete" value="No" value="No" <?php if($student['complete_immunization'] == 'No') {echo "checked";}?>>
                 <label for="no">No</label><br>
                 <label>If not, please specify.</label>
-                <input type="text" id="specifyImmunization" class="specify" name="specifyImmunization" value="<?=$student['immunization_specification'];?>" readonly>
+                <input type="text" id="specifyImmunization" class="specify" name="specifyImmunization" value="<?=$student['immunization_specification'];?>" >
                 <hr>
 
                 <p><b>COVID 19 VACCINE:</b> Please check the appropriate boxes.</p>

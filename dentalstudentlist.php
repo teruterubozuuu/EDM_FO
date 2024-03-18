@@ -21,7 +21,9 @@ require 'dbcon.php';
         <div class="col-md-12">
             <div class="card">
                 <div class="card-header">
-                    <h4>Dental Student Details</h4>
+                    <h4>Dental Student Details
+                    <a href="dashboard.html" class="btn btn-primary float-end">Back to Dashboard</a>
+                    </h4>
                 </div>
                 <div class="card-body">
 
@@ -51,8 +53,8 @@ require 'dbcon.php';
                                         <td><?= $student['hospital_municipality']; ?></td>
                                         <td>
                                             <a href="dentalstudentview.php?id=<?= $student['student_number']; ?>" class="btn btn-info btn-sm">View</a>
-                                            <a href="#?id=<?= $student['student_number']; ?>" class="btn btn-success btn-sm">Edit</a>
-                                            <form action="records.php" method="POST" class="d-inline">
+                                            <a href="dentalstudentedit.php?id=<?= $student['student_number']; ?>" class="btn btn-success btn-sm">Edit</a>
+                                            <form action="dentalrecords.php" method="POST" class="d-inline">
                                                 <button type="submit" name="delete" value="<?=$student['student_number'];?>" class="btn btn-danger btn-sm">Delete</button>
                                             </form>
                                         </td>
@@ -71,6 +73,8 @@ require 'dbcon.php';
         </div>
     </div>
 </div>
+
+
     
 </body>
 </html>
