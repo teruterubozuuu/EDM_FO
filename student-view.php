@@ -107,9 +107,9 @@ require 'dbcon.php';
                 <h2>Medical History</h2>
 
                 <p>Has your child been tested positive for COVID 19?</p>
-                <input type="radio" id="yesTestedPositive" class="yes" name="TestedPositive"  value="Yes" <?php if($student['hasTestedPositive_COVID19'] == 'Yes') {echo "checked";}?>>
+                <input type="radio" id="yesTestedPositive" class="yes" name="TestedPositive"  value="Yes" <?php if($student['hasTestedPositive_COVID19'] == 'yes') {echo "checked";}?>>
                 <label for="yesTestedPositive">Yes</label><br>
-                <input type="radio" id="noTestedPositive" class="no" name="TestedPositive"  value="No" <?php if($student['hasTestedPositive_COVID19'] == 'No') {echo "checked";}?>>
+                <input type="radio" id="noTestedPositive" class="no" name="TestedPositive"  value="No" <?php if($student['hasTestedPositive_COVID19'] == 'no') {echo "checked";}?>>
                 <label for="yesTestedPositive">No</label><br>
                 <label>If yes, please specify the date</label>
                 <input type="date" id="dateTestedPositive" name="dateTested" value="<?=$student['testedPositive_date'];?>" readonly>

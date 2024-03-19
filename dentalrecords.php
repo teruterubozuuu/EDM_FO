@@ -262,20 +262,20 @@
     $cariesFilling13 = $_POST['cariesFilling13'];
     $cariesFilling14 = $_POST['cariesFilling14'];
 
-    $carriesExtract1 = $_POST['carriesExtract1'];
-    $carriesExtract2 = $_POST['carriesExtract2'];
-    $carriesExtract3 = $_POST['carriesExtract3'];
-    $carriesExtract4 = $_POST['carriesExtract4'];
-    $carriesExtract5 = $_POST['carriesExtract5'];
-    $carriesExtract6 = $_POST['carriesExtract6'];
-    $carriesExtract7 = $_POST['carriesExtract7'];
-    $carriesExtract8 = $_POST['carriesExtract8'];
-    $carriesExtract9 = $_POST['carriesExtract9'];
-    $carriesExtract10 = $_POST['carriesExtract10'];
-    $carriesExtract11 = $_POST['carriesExtract11'];
-    $carriesExtract12 = $_POST['carriesExtract12'];
-    $carriesExtract13 = $_POST['carriesExtract13'];
-    $carriesExtract14 = $_POST['carriesExtract14'];
+    $carriesExtract1 = $_POST['cariesExtract1'];
+    $carriesExtract2 = $_POST['cariesExtract2'];
+    $carriesExtract3 = $_POST['cariesExtract3'];
+    $carriesExtract4 = $_POST['cariesExtract4'];
+    $carriesExtract5 = $_POST['cariesExtract5'];
+    $carriesExtract6 = $_POST['cariesExtract6'];
+    $carriesExtract7 = $_POST['cariesExtract7'];
+    $carriesExtract8 = $_POST['cariesExtract8'];
+    $carriesExtract9 = $_POST['cariesExtract9'];
+    $carriesExtract10 = $_POST['cariesExtract10'];
+    $carriesExtract11 = $_POST['cariesExtract11'];
+    $carriesExtract12 = $_POST['cariesExtract12'];
+    $carriesExtract13 = $_POST['cariesExtract13'];
+    $carriesExtract14 = $_POST['cariesExtract14'];
 
     $rootFragment1 = $_POST['rootFragment1'];
     $rootFragment2 = $_POST['rootFragment2'];
@@ -361,93 +361,93 @@
                patient_status = '$patient' 
               WHERE student_number = '$student' ";
 
-    // $query2 = "UPDATE upper_right SET
-    // 
-    //            WHERE student_number = '$student' ";
-// 
-    // $query3 = "UPDATE upper_left SET
-    // 
-    //            WHERE student_number = '$student' ";  
-  // 
-    // $query4 = "UPDATE lower_right SET 
-    //           
-    //           WHERE student_number = '$student' ";
-// 
-    // $query5 = "UPDATE lower_left SET
-    // 
-    //            WHERE student_number = '$student' ";
-// 
-    // $query6 = "UPDATE examination_date SET
-    // 
-    //            WHERE student_number = '$student' "; 
-    //     
-    // $query7 = "UPDATE age_last_birthday SET 
-    //           
-    //            WHERE student_number = '$student' ";
-// 
-    // $query8 = "UPDATE presence_dental_caries SET
-// 
-    //            WHERE student_number = '$student' ";
-// 
-    // $query9 = "UPDATE presence_gingivitis SET
-// 
-    //            WHERE student_number = '$student' ";  
-// 
-    // $query10 = "UPDATE presence_periodontal_pocket SET 
-    //     
-    //            WHERE student_number = '$student' ";
-// 
-    // $query11 = "UPDATE presence_oral_debris SET
-// 
-    //            WHERE student_number = '$student' ";
-// 
-    // $query12 = "UPDATE presence_calculus SET
-// 
-    //            WHERE student_number = '$student' "; 
-  // 
-    // $query13 = "UPDATE presence_neoplasm SET 
-    //           
-    //           WHERE student_number = '$student' ";
-// 
-    // $query14 = "UPDATE presence_df_anomaly SET
-    // 
-    //            WHERE student_number = '$student' ";
-// 
-    // $query15 = "UPDATE num_teeth_present SET
-    // 
-    //            WHERE student_number = '$student' ";  
-  // 
-    // $query16 = "UPDATE caries_indicated_filling SET 
-    //           
-    //           WHERE student_number = '$student' ";
-// 
-    // $query17 = "UPDATE caries_indicated_extraction SET
-    // 
-    //            WHERE student_number = '$student' ";
-// 
-    // $query18 = "UPDATE root_fragment SET
-    // 
-    //            WHERE student_number = '$student' "; 
-    //     
-    // $query19 = "UPDATE missing_caries SET 
-    //           
-    //            WHERE student_number = '$student' ";
-// 
-    // $query20 = "UPDATE filled_restored SET
-// 
-    //            WHERE student_number = '$student' ";
-// 
-    // $query21 = "UPDATE total_df_dmf SET
-// 
-    //            WHERE student_number = '$student' ";  
-// 
-    // $query22 = "UPDATE fluoride_application SET 
-    //     
-    //            WHERE student_number = '$student' ";
-// 
-    // $query23 = "UPDATE examiner_name SET
-// 
-    //            WHERE student_number = '$student' ";
+    $query2 = "UPDATE upper_right SET
+    
+               WHERE student_number = '$student' ";
+
+    $query3 = "UPDATE upper_left SET
+    
+               WHERE student_number = '$student' ";  
+  
+    $query4 = "UPDATE lower_right SET 
+              
+              WHERE student_number = '$student' ";
+
+    $query5 = "UPDATE lower_left SET
+    
+               WHERE student_number = '$student' ";
+
+    $query6 = "UPDATE examination_date SET
+    
+               WHERE student_number = '$student' "; 
+        
+    $query7 = "UPDATE age_last_birthday SET 
+              
+               WHERE student_number = '$student' ";
+
+    $query8 = "UPDATE presence_dental_caries SET
+
+               WHERE student_number = '$student' ";
+
+    $query9 = "UPDATE presence_gingivitis SET
+ 
+            WHERE student_number = '$student' ";  
+
+     $query10 = "UPDATE presence_periodontal_pocket SET 
+         
+                WHERE student_number = '$student' ";
+ 
+     $query11 = "UPDATE presence_oral_debris SET
+ 
+                WHERE student_number = '$student' ";
+ 
+     $query12 = "UPDATE presence_calculus SET
+
+                WHERE student_number = '$student' "; 
+   
+     $query13 = "UPDATE presence_neoplasm SET 
+               
+               WHERE student_number = '$student' ";
+
+     $query14 = "UPDATE presence_df_anomaly SET
+     
+                WHERE student_number = '$student' ";
+ 
+     $query15 = "UPDATE num_teeth_present SET
+     
+                WHERE student_number = '$student' ";  
+   
+     $query16 = "UPDATE caries_indicated_filling SET 
+               
+               WHERE student_number = '$student' ";
+ 
+     $query17 = "UPDATE caries_indicated_extraction SET
+     
+                WHERE student_number = '$student' ";
+ 
+     $query18 = "UPDATE root_fragment SET
+     
+                WHERE student_number = '$student' "; 
+         
+     $query19 = "UPDATE missing_caries SET 
+               
+                WHERE student_number = '$student' ";
+ 
+     $query20 = "UPDATE filled_restored SET
+ 
+                WHERE student_number = '$student' ";
+ 
+     $query21 = "UPDATE total_df_dmf SET
+ 
+                WHERE student_number = '$student' ";  
+ 
+     $query22 = "UPDATE fluoride_application SET 
+         
+                WHERE student_number = '$student' ";
+ 
+     $query23 = "UPDATE examiner_name SET
+ 
+                WHERE student_number = '$student' ";
 
 
     $query_run1 = mysqli_query($conn, $query1);
