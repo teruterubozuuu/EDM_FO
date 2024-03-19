@@ -98,9 +98,9 @@ require 'dbcon.php';
             <label class="label" for="address">Address</label>
             <input type="text" id="address" name="address" value="<?=$student["address"];?>" >
             <br>
-            <input type="radio" id="in-patient" name="patient" value="In" >
+            <input type="radio" id="in-patient" name="patient" value="in" <?php if($student['patient_status'] == "In") {echo "checked";}?>>
             <label class="label" for="in-patient">In Patient</label>
-            <input type="radio" id="out-patient" name="patient" value="Out" >
+            <input type="radio" id="out-patient" name="patient" value="out" <?php if($student['patient_status'] == "Out") {echo "checked";}?>>
             <label class="label" for="out-patient">Out Patient</label>
 
             <hr>

@@ -99,9 +99,9 @@ require 'dbcon.php';
             <label class="label" for="address">Address</label>
             <input type="text" id="address" name="address" value="<?=$student["address"];?>" >
             <br>
-            <input type="radio" id="in-patient" name="patient" value="Yes" <?php if($student['patient_status'] == 'Yes') {echo "checked";}?>>
+            <input type="radio" id="in-patient" name="patient" value="in" <?php if($student['patient_status'] == "in") {echo "checked";}?>>
             <label class="label" for="in-patient">In Patient</label>
-            <input type="radio" id="out-patient" name="patient" value="No" <?php if($student['patient_status'] == 'No') {echo "checked";}?>>
+            <input type="radio" id="out-patient" name="patient" value="out" <?php if($student['patient_status'] == "out") {echo "checked";}?>>
             <label class="label" for="out-patient">Out Patient</label>
 
             <hr>
@@ -413,17 +413,17 @@ require 'dbcon.php';
                 <tr>
                     <th class="label">Presence of Dental Caries</th>
                     <td colspan="2">
-                        <input type="radio" id= "promptDentalCaries1Yes" name="promptDentalCaries1" value="Yes" <?php if($student['dentalCaries_1'] == 'Yes') {echo 'checked';}?>>
+                        <input type="radio" name="promptDentalCaries1" value="yes" <?php if($student['dentalCaries_1'] == "yes") {echo "checked";}?>>
                         <label>Yes</label>
                         <br>
-                        <input type="radio" id= "promptDentalCaries1No" name="promptDentalCaries1" value="No" <?php if($student['dentalCaries_1'] == 'No') {echo 'checked';}?>>
+                        <input type="radio" name="promptDentalCaries1" value="no" <?php if($student['dentalCaries_1'] == "no") {echo "checked";}?>>
                         <label>No</label>
                     </td>
                     <td colspan="2">
-                        <input type="radio" id= "promptDentalCaries2Yes" name="promptDentalCaries2" value="Yes" >
+                        <input type="radio" name="promptDentalCaries2" value="yes" <?php if($student['dentalCaries_2'] == "yes") {echo "checked";}?>>
                         <label>Yes</label>
                         <br>
-                        <input type="radio" id= "promptDentalCaries2No" name="promptDentalCaries2" value="No" >
+                        <input type="radio" name="promptDentalCaries2" value="no" <?php if($student['dentalCaries_2'] == "no") {echo "checked";}?>>
                         <label>No</label>
                     </td>
                     <td colspan="2">
@@ -949,8 +949,6 @@ require 'dbcon.php';
                 </tr>
 
             </table>
-
-            <button type="submit">Update</button>
         </form>   
     </div>
 
